@@ -1,0 +1,30 @@
+@import "../../../../../Styles/common.scss";
+
+.MenShoesSize {
+  .shoesSizeList {
+    transition: all 0.25s ease-in;
+    max-height: 0;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    &.isActive {
+      max-height: 400px;
+    }
+    label {
+      width: 45px;
+      margin: 3px 3px;
+      padding: 10px 0;
+      font-size: 13px;
+      letter-spacing: -1px;
+      color: #2e2e2e;
+      border: 1px solid $borderColor;
+      border-radius: 6px;
+      text-align: center;
+      &:hover {
+        border: 1px solid #111111;
+        cursor: pointer;
+      }
+    }
+  }
+}

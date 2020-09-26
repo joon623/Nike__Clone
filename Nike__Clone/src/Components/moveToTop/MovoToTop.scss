@@ -1,0 +1,23 @@
+.MoveToTop {
+  position: fixed;
+  right: 30px;
+  bottom: 84px;
+  width: 40px;
+  height: 40px;
+  padding-top: 10px;
+  text-align: center;
+  background: #ebebeb;
+  color: #999999;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 10;
+
+  &:hover {
+    background-color: #fa5400;
+    color: white;
+  }
+
+  &.MoveToTopActive {
+    display: none;
+  }
+}

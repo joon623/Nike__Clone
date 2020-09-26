@@ -1,0 +1,205 @@
+{
+  "size": [
+    220,
+    225,
+    230,
+    234,
+    235,
+    "235W",
+    239,
+    240,
+    245,
+    250,
+    255,
+    260,
+    265,
+    270,
+    275,
+    280,
+    285,
+    290,
+    295,
+    300,
+    305,
+    310,
+    315,
+    320,
+    325,
+    330,
+    335,
+    340,
+    350,
+    360,
+    370,
+    380,
+    "3XL",
+    "4XL"
+  ],
+
+  "color": [
+    {
+      "id": 1,
+      "color": "beige",
+      "name": "베이지"
+    },
+    {
+      "id": 2,
+      "color": "black",
+      "name": "검정색"
+    },
+    {
+      "id": 3,
+      "color": "blue",
+      "name": "파랑색"
+    },
+    {
+      "id": 4,
+      "color": "brown",
+      "name": "갈색"
+    },
+    {
+      "id": 5,
+      "color": "gold",
+      "name": "금색"
+    },
+    {
+      "id": 6,
+      "color": "gray",
+      "name": "회색"
+    },
+    {
+      "id": 7,
+      "color": "green",
+      "name": "녹색"
+    },
+    {
+      "id": 8,
+      "color": "olive",
+      "name": "쑥쌕"
+    },
+    {
+      "id": 9,
+      "color": "navy",
+      "name": "남색"
+    },
+    {
+      "id": 10,
+      "color": "orange",
+      "name": "주황색"
+    },
+    {
+      "id": 11,
+      "color": "pink",
+      "name": "분홍색"
+    },
+    {
+      "id": 12,
+      "color": "purple",
+      "name": "보라색"
+    },
+    {
+      "id": 13,
+      "color": "red",
+      "name": "빨강색"
+    },
+    {
+      "id": 14,
+      "color": "silver",
+      "name": "은색"
+    },
+    {
+      "id": 15,
+      "color": "white",
+      "name": "흰색"
+    },
+    {
+      "id": 16,
+      "color": "yellow",
+      "name": "노란색"
+    }
+  ],
+
+  "shoes": [
+    {
+      "id": 1,
+      "img": "https://static-breeze.nike.co.kr/kr/ko_kr/cmsstatic/product/CK7663-102/77a26b2f-f13d-4371-a6b2-2db56df4aada_primary.jpg?browse",
+      "title": "나이키 에어 포스 1 '07",
+      "detail": "남성 신발 라이프스타일",
+      "color": "1 컬러",
+      "price": 129000,
+      "colorName": "빨강색"
+    },
+    {
+      "id": 2,
+      "img": "https://static-breeze.nike.co.kr/kr/ko_kr/cmsstatic/product/CU4523-001/10b1c639-dd26-4520-bb9d-a31f08ed38d1_primary.jpg?browse",
+      "title": "에어 조던 V 로우",
+      "detail": "성인공용 신발 골프",
+      "color": "1 컬러",
+      "price": 289000,
+      "colorName": "금색"
+    },
+    {
+      "id": 3,
+      "img": "https://static-breeze.nike.co.kr/kr/ko_kr/cmsstatic/product/CQ3835-002/ef2e9a29-eefd-416c-94df-53849ad1550a_primary.jpg?browse",
+      "title": "에어 조던 1 하이 플라이즈",
+      "detail": "남성 신발 농구",
+      "color": "1 컬러",
+      "price": 169000,
+      "colorName": "검정색"
+    },
+    {
+      "id": 4,
+      "img": "https://static-breeze.nike.co.kr/kr/ko_kr/cmsstatic/product/DA1341-100/57668c46-cf82-4fce-bf9f-4627d4268569_primary.jpg?browse",
+      "title": "KD13 EP",
+      "detail": "남성 신발 농구",
+      "color": "1 컬러",
+      "price": 179000,
+      "colorName": "파랑색"
+    },
+    {
+      "id": 5,
+      "img": "https://static-breeze.nike.co.kr/kr/ko_kr/cmsstatic/product/CI9925-100/70dedb79-d711-4657-b6db-cc2af3ca0afe_primary.jpg?browse",
+      "title": "나이키 에어 줌 알파플라이 넥스트%",
+      "detail": "남성 레이싱화",
+      "color": "1 컬러",
+      "price": 319000,
+      "colorName": "베이지"
+    },
+    {
+      "id": 6,
+      "img": "https://static-breeze.nike.co.kr/kr/ko_kr/cmsstatic/product/CZ6431-100/c3a834e4-0718-41e9-bcbd-0b281f867f23_primary.jpg?browse",
+      "title": "에어 조던 3 레트로 SE",
+      "detail": "남성 신발 농구",
+      "color": "1 컬러",
+      "price": 239000,
+      "colorName": "베이지"
+    },
+    {
+      "id": 7,
+      "img": "https://static-breeze.nike.co.kr/kr/ko_kr/cmsstatic/product/CZ4609-300/ffdc6915-2b81-4027-9238-12fbe2599d7d_primary.jpg?browse",
+      "title": "나이키 블레이저 '77 빈티지",
+      "detail": "남성 신발 라이프스타일",
+      "color": "1 컬러",
+      "price": 119000,
+      "colorName": "베이지"
+    },
+    {
+      "id": 8,
+      "img": "https://static-breeze.nike.co.kr/kr/ko_kr/cmsstatic/product/CJ6779-100/776cdbe8-c46a-4ded-a6e1-fe987054cea3_primary.jpg?browse",
+      "title": "나이키 에어 맥스 3",
+      "detail": "남성 신발 라이프스타일",
+      "color": "1 컬러",
+      "price": 169000,
+      "colorName": "베이지"
+    },
+    {
+      "id": 9,
+      "img": "https://static-breeze.nike.co.kr/kr/ko_kr/cmsstatic/product/CW2805-160/82167f80-fa7d-41c7-b9a9-611a12f314ec_primary.jpg?browse",
+      "title": "에어 조던 7 레트로 GC",
+      "detail": "남성 신발 농구",
+      "color": "1 컬러",
+      "price": 255000,
+      "colorName": "베이지"
+    }
+  ]
+}

@@ -1,0 +1,516 @@
+@import "../../Styles/common.scss";
+
+.Nav {
+  z-index: 5;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #ffffff;
+
+  .headernav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e5e5;
+
+    .coLists {
+      display: inline-block;
+
+      li {
+        display: inline-block;
+        border-right: 1px solid #e5e5e5;
+
+        .linkCo {
+          display: inline-block;
+          height: 38px;
+          padding: 0px 20px;
+          line-height: 38px;
+          min-width: 90px;
+          text-align: center;
+          text-decoration: none;
+          opacity: 1;
+          cursor: pointer;
+
+          .linkName {
+            opacity: 0.6;
+            font-size: 12px;
+            font-family: navCategoryFont;
+            text-decoration: none;
+            color: #111111;
+          }
+
+          .linkSvgJordan {
+            vertical-align: middle;
+          }
+
+          .linkName {
+            margin-right: 3px;
+
+            &:hover {
+              opacity: 1;
+              font-size: 12px;
+              font-family: navCategoryFont;
+            }
+          }
+
+          .linkSvgCon {
+            opacity: 0.6;
+            vertical-align: middle;
+
+            &:hover {
+              opacity: 1;
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+    }
+
+    .myMenuLists {
+      z-index: 16;
+      display: inline-block;
+      margin-right: 20px;
+
+      li {
+        display: inline-block;
+
+        .linkMyMenu {
+          display: inline-block;
+          height: 38px;
+          padding: 0px 11px;
+          opacity: 0.6;
+          font-size: 12px;
+          line-height: 38px;
+          color: #111111;
+          text-align: center;
+          text-decoration: none;
+
+          &:hover {
+            opacity: 1;
+          }
+
+          .myMenuCartImg {
+            width: 18px;
+            vertical-align: middle;
+          }
+
+          .myMenuLocationImg {
+            width: 18px;
+            padding-right: 3px;
+            vertical-align: middle;
+          }
+        }
+
+        .linkMyMenuName {
+          font-size: 12px;
+          font-family: navCategoryFont;
+          cursor: pointer;
+
+          &.hide {
+            display: none;
+          }
+
+          .linkMyMenuSign {
+            padding: 0px 2px;
+            opacity: 0.6;
+            font-size: 12px;
+            text-decoration: none;
+            color: #111111;
+            cursor: pointer;
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+
+        .linkMyInfos {
+          display: inline-block;
+          height: 38px;
+          padding: 0px 5px 0px 2px;
+          font-size: 12px;
+          line-height: 36px;
+          color: #111111;
+          text-align: center;
+          text-decoration: none;
+          cursor: pointer;
+
+          &.hide {
+            display: none;
+          }
+
+          .userMenuTab {
+            opacity: 0.6;
+          }
+
+          .userMenuTab:hover {
+            opacity: 1;
+            background-color: white;
+            border-bottom: 2px solid black;
+          }
+
+          .myInfoIcon {
+            width: 20px;
+            opacity: 1;
+            vertical-align: middle;
+          }
+
+          .userDropDown {
+            position: absolute;
+            right: 160px;
+            top: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 156px;
+            height: 155px;
+            padding: 15px 32px 26px 32px;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px 0 4px 4px;
+            background-color: white;
+            align-items: center;
+            opacity: 1;
+
+            &.hide {
+              display: none;
+            }
+
+            span {
+              height: 21px;
+              font-size: 12px;
+              font-family: navCategoryFont;
+              font-weight: 400;
+              display: block;
+              padding-bottom: 6px;
+              opacity: 0.6;
+
+              &:hover {
+                opacity: 1;
+              }
+            }
+          }
+        }
+
+        .linkMyInfo {
+          height: 38px;
+          padding: 0px 5px 0px 2px;
+          opacity: 0.6;
+          font-size: 12px;
+          line-height: 38px;
+          text-align: center;
+          text-decoration: none;
+          color: #111111;
+          display: inline-block;
+          cursor: pointer;
+
+          &:hover {
+            opacity: 1;
+            border-bottom: 2px solid black;
+          }
+        }
+      }
+    }
+  }
+
+  .navMain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 32px 0px 30px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 1px;
+
+    .mainLogoLink {
+      display: flex;
+      align-items: center;
+      min-height: 70px;
+      width: 194px;
+      cursor: pointer;
+
+      .mainLogoImg {
+        vertical-align: auto;
+      }
+    }
+
+    .mainCategoryList {
+      display: flex;
+      min-height: 70px;
+
+      .mainCategoryItem {
+        display: flex;
+        align-items: center;
+        padding: 0px 20px;
+        font-size: 16px;
+        font-weight: 700;
+
+        &:hover {
+          border-bottom: solid 1px #111111;
+
+          .NRContainer {
+            position: absolute;
+            top: 111px;
+            left: 0;
+            display: block;
+            min-width: 120px;
+            width: 100%;
+            padding-top: 35px;
+            padding-bottom: 45px;
+
+            .NRCenter {
+              display: flex;
+              justify-content: center;
+              margin: 0px 176.5px;
+
+              .nrFirstContainer {
+                display: inline-block;
+                height: 100%;
+
+                .categoryTemaList {
+                  display: flex;
+                  flex-direction: column;
+                  min-width: 180px;
+                  max-width: 210px;
+                  margin-top: 10px;
+
+                  .categoryTemaItem {
+                    display: flex;
+                    align-items: center;
+                    min-height: 28px;
+
+                    .categoryTemaLinkMain {
+                      font-size: 16px;
+                      font-family: navCategoryMainFont;
+                      color: #111111;
+                      text-decoration: none;
+                      cursor: pointer;
+
+                      &:hover {
+                        color: #8d8d8d;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .navCategoryLine {
+                border-left: 1px solid #dedfda;
+                border-left-width: 1px;
+                border-left-style: solid;
+                border-left-color: rgb(222, 223, 218);
+              }
+
+              .nrSecondContainer {
+                display: inline-block;
+                height: 100%;
+
+                .nrMenList {
+                  min-width: 167px;
+                  max-width: 210px;
+                  margin-left: 30px;
+                  margin-top: 10px;
+
+                  .nrMenItem {
+                    display: flex;
+                    align-items: center;
+                    min-height: 25px;
+
+                    .nrMenLink {
+                      font-size: 14px;
+                      font-family: navCategoryFont;
+                      font-weight: 400;
+                      color: #111111;
+                      text-decoration: none;
+                      cursor: pointer;
+                      &:hover {
+                        color: #8d8d8d;
+                      }
+                    }
+
+                    .nrMenLinkMain {
+                      font-size: 16px;
+                      font-family: navCategoryMainFont;
+                      color: #111111;
+                      text-decoration: none;
+                      cursor: pointer;
+
+                      &:hover {
+                        color: #8d8d8d;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .nrThirdContainer {
+                display: inline-block;
+                height: 100%;
+
+                .nrWomenList {
+                  min-width: 187px;
+                  max-width: 210px;
+                  margin-top: 10px;
+
+                  .nrWomenItem {
+                    display: flex;
+                    align-items: center;
+                    min-height: 25px;
+
+                    .nrWomenLink {
+                      font-size: 14px;
+                      font-family: navCategoryFont;
+                      font-weight: 400;
+                      color: #111111;
+                      text-decoration: none;
+                      cursor: pointer;
+
+                      &:hover {
+                        color: #8d8d8d;
+                      }
+                    }
+
+                    .nrWomenLinkMain {
+                      font-size: 16px;
+                      font-family: navCategoryMainFont;
+                      color: #111111;
+                      text-decoration: none;
+                      cursor: pointer;
+
+                      &:hover {
+                        color: #8d8d8d;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .nrFourthContainer {
+                display: inline-block;
+                height: 100%;
+
+                .nrSportsList {
+                  min-width: 167px;
+                  max-width: 210px;
+                  margin-left: 30px;
+                  margin-top: 10px;
+
+                  .nrSportsItem {
+                    display: flex;
+                    align-items: center;
+                    min-height: 25px;
+
+                    .nrSportsLink {
+                      font-size: 14px;
+                      font-family: navCategoryFont;
+                      font-weight: 400;
+                      color: #111111;
+                      text-decoration: none;
+                      cursor: pointer;
+
+                      &:hover {
+                        color: #8d8d8d;
+                      }
+                    }
+
+                    .nrSportsLinkMain {
+                      font-family: navCategoryMainFont;
+                      font-size: 16px;
+                      color: #111111;
+                      text-decoration: none;
+                      cursor: pointer;
+
+                      &:hover {
+                        color: #8d8d8d;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .nrFifthContainer {
+                display: inline-block;
+                height: 100%;
+
+                .nrBrandList {
+                  min-width: 167px;
+                  max-width: 210px;
+                  margin-left: 30px;
+                  margin-top: 10px;
+
+                  .nrBrandItem {
+                    display: flex;
+                    align-items: center;
+                    min-height: 25px;
+
+                    .nrBrandLinkMain {
+                      font-family: navCategoryMainFont;
+                      font-size: 16px;
+                    }
+
+                    .nrBrandLink {
+                      font-size: 14px;
+                      font-family: navCategoryFont;
+                      font-weight: 400;
+                      color: #111111;
+                      text-decoration: none;
+                      cursor: pointer;
+
+                      &:hover {
+                        color: #8d8d8d;
+                      }
+                    }
+
+                    .nrBrandLinkMain {
+                      font-family: navCategoryMainFont;
+                      font-size: 16px;
+                      color: #111111;
+                      cursor: pointer;
+
+                      &:hover {
+                        color: #8d8d8d;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .mainCategoryLink {
+          cursor: pointer;
+        }
+
+        .NRContainer {
+          z-index: 2;
+          display: none;
+          background-color: white;
+        }
+      }
+    }
+
+    .searchContainer {
+      position: relative;
+
+      .mainInputName {
+        display: table-cell;
+
+        .mainInput {
+          padding: 10px 30px 10px 49px;
+          border: solid 1px rgb(229, 229, 229);
+          font-size: 14px;
+        }
+      }
+
+      .searchBtn {
+        position: absolute;
+        left: 27px;
+        top: 11px;
+        border: 0;
+        outline: 0;
+        background-color: white;
+
+        cursor: pointer;
+      }
+    }
+  }
+}

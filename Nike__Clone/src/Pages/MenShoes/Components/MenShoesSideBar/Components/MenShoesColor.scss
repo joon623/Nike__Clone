@@ -1,0 +1,193 @@
+.MenShoesColor {
+  .shoesColorList {
+    transition: all 0.25s ease-in-out;
+    overflow: hidden;
+    max-height: 0;
+
+    &.isActive {
+      max-height: 400px;
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-left: 10px;
+
+      li {
+        width: 49px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 8px;
+        margin-right: 15px;
+
+        .beige {
+          width: 28px;
+          height: 28px;
+          margin-top: 10px;
+          background-color: #f0e68c;
+          border-radius: 50%;
+          border: 1px solid #ccc;
+          cursor: pointer;
+        }
+
+        .black {
+          width: 28px;
+          height: 28px;
+          margin-top: 10px;
+          background-color: #000000;
+          border-radius: 50%;
+          border: 1px solid #ccc;
+          cursor: pointer;
+        }
+
+        .blue {
+          width: 28px;
+          height: 28px;
+          margin-top: 10px;
+          background-color: #3786d5;
+          border-radius: 50%;
+          border: 1px solid #ccc;
+          cursor: pointer;
+        }
+
+        .brown {
+          width: 28px;
+          height: 28px;
+          margin-top: 10px;
+          background-color: #765439;
+          border-radius: 50%;
+          border: 1px solid #ccc;
+          cursor: pointer;
+        }
+
+        .gold {
+          width: 28px;
+          height: 28px;
+          margin-top: 10px;
+          background-color: #d5d603;
+          border-radius: 50%;
+          border: 1px solid #ccc;
+          cursor: pointer;
+        }
+
+        .gray {
+          width: 28px;
+          height: 28px;
+          margin-top: 10px;
+          background-color: #6d6d6d;
+          border-radius: 50%;
+          border: 1px solid #ccc;
+          cursor: pointer;
+        }
+
+        .green {
+          width: 28px;
+          height: 28px;
+          margin-top: 10px;
+          background-color: #0d9300;
+          border-radius: 50%;
+          border: 1px solid #ccc;
+          cursor: pointer;
+        }
+
+        .olive {
+          width: 28px;
+          height: 28px;
+          margin-top: 10px;
+          background-color: #7f7f00;
+          border-radius: 50%;
+          border: 1px solid #ccc;
+          cursor: pointer;
+        }
+
+        .navy {
+          width: 28px;
+          height: 28px;
+          margin-top: 10px;
+          background-color: #3b4a75;
+          border-radius: 50%;
+          border: 1px solid #ccc;
+          cursor: pointer;
+        }
+
+        .orange {
+          width: 28px;
+          height: 28px;
+          margin-top: 10px;
+          background-color: #eb621e;
+          border-radius: 50%;
+          border: 1px solid #ccc;
+          cursor: pointer;
+        }
+
+        .pink {
+          width: 28px;
+          height: 28px;
+          margin-top: 10px;
+          background-color: #ea008a;
+          border-radius: 50%;
+          border: 1px solid #ccc;
+          cursor: pointer;
+        }
+
+        .purple {
+          width: 28px;
+          height: 28px;
+          margin-top: 10px;
+          background-color: #693cb1;
+          border-radius: 50%;
+          border: 1px solid #ccc;
+          cursor: pointer;
+        }
+
+        .red {
+          width: 28px;
+          height: 28px;
+          margin-top: 10px;
+          background-color: #c40001;
+          border-radius: 50%;
+          border: 1px solid #ccc;
+          cursor: pointer;
+        }
+
+        .silver {
+          width: 28px;
+          height: 28px;
+          margin-top: 10px;
+          background-color: #c4c4c4;
+          border-radius: 50%;
+          border: 1px solid #ccc;
+          cursor: pointer;
+        }
+
+        .white {
+          width: 28px;
+          height: 28px;
+          margin-top: 10px;
+          background-color: #ffffff;
+          border-radius: 50%;
+          border: 1px solid #ccc;
+          cursor: pointer;
+        }
+
+        .yellow {
+          width: 28px;
+          height: 28px;
+          margin-top: 10px;
+          background-color: #fcc301;
+          border-radius: 50%;
+          border: 1px solid #ccc;
+          cursor: pointer;
+        }
+
+        .name {
+          font-size: 12px;
+          color: #111;
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+}

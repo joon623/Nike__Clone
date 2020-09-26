@@ -1,0 +1,44 @@
+@import "../../../../Styles/common.scss";
+
+.DeliveryService {
+  border-bottom: 1px solid $borderColor;
+  margin-bottom: 15px;
+
+  .serviceText {
+    @include flexCenter;
+    height: 47px;
+    margin-top: 20px;
+    border: 1px solid $borderColor;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+
+    span.nikeLogo {
+      background: no-repeat left url("/images/ItemDetail/nikehome.png");
+      background-size: 24px;
+      width: 24px;
+      height: 24px;
+      position: relative;
+      top: 1px;
+      left: -5px;
+    }
+  }
+
+  .serviceContent {
+    height: 61px;
+    padding: 20px 0;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #111111;
+    font-weight: bold;
+
+    :nth-child(2) {
+      font-size: 12px;
+      text-decoration: underline;
+      color: #2e2e2e;
+      font-weight: normal;
+    }
+  }
+}

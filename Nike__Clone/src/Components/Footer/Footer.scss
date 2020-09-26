@@ -1,0 +1,169 @@
+.Footer {
+  max-width: 100%;
+  background-color: #111111;
+  color: #999999;
+  font-size: 11px;
+
+  .header {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 40px 0;
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    line-height: 15px;
+    .information {
+      ul {
+        li {
+          margin-top: 8px;
+          color: #ffffff;
+          font-size: 13px;
+          font-weight: normal;
+        }
+
+        li:first-child {
+          margin: 0;
+        }
+      }
+    }
+
+    .customerService {
+      span {
+        display: inline-block;
+        margin-bottom: 10px;
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: bold;
+      }
+
+      li {
+        margin-top: 8px;
+      }
+    }
+
+    .aboutNike {
+      display: flex;
+      flex-direction: column;
+
+      span:first-child {
+        display: inline-block;
+        margin-bottom: 10px;
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: bold;
+      }
+
+      span:last-child {
+        margin-top: 8px;
+      }
+    }
+
+    .social {
+      span {
+        display: inline-block;
+        margin-bottom: 10px;
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: bold;
+      }
+      .socialIcon {
+        margin-top: 8px;
+        display: flex;
+        align-items: center;
+        i.fab {
+          border-radius: 50%;
+          width: 23px;
+          height: 23px;
+          font-size: 18px;
+          margin-right: 5px;
+
+          &:hover {
+            color: white;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    padding: 15px 32px;
+    border-top: 1px solid #444;
+    border-bottom: 1px solid #444;
+    line-height: 18px;
+
+    i.fa-map-marker {
+      font-size: 13px;
+      color: #ffffff;
+    }
+
+    div:first-child {
+      span:nth-child(2) {
+        color: #ffffff;
+        padding-left: 8px;
+        padding-right: 15px;
+      }
+    }
+
+    div:nth-child(2) {
+      span {
+        padding-left: 16px;
+      }
+    }
+  }
+
+  .etc {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 16px 0 30px;
+    line-height: 19px;
+    .etcInfo {
+      .communicationSale {
+        span {
+          span {
+            color: #ffffff;
+          }
+        }
+      }
+
+      .personalInfo {
+        span {
+          span {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+
+    .insurance {
+      padding-left: 20px;
+      margin-right: 16px;
+
+      .insurranceText {
+        margin-bottom: 15px;
+      }
+
+      .preventContents {
+        span {
+          span {
+            color: #ffffff;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .inipayIcon {
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.Item {
+  max-width: 1440px;
+  padding: 100px 54px;
+  overflow: hidden;
+  outline: none;
+  // margin: 0 auto;
+
+  @media (max-width: 765px) {
+    display: none;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+
+  .slick-slide {
+    max-height: 400px;
+  }
+  .item {
+    img,
+    .title,
+    .category,
+    .color,
+    .price {
+      margin-bottom: 8px;
+
+      &:hover {
+        cursor: text;
+      }
+    }
+
+    img {
+      width: 90%;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .title {
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 1.4em;
+    }
+
+    .category {
+      font-size: 14px;
+      color: #8d8d8d;
+    }
+
+    .color {
+      font-size: 14px;
+      color: #8d8d8d;
+    }
+
+    .price {
+      font-size: 14px;
+      color: #111111;
+    }
+  }
+}
+
+.slick-slide div {
+  outline: none;
+}

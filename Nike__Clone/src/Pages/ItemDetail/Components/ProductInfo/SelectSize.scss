@@ -1,0 +1,16 @@
+.SelectSize {
+  margin-top: 31px;
+  .sizeText {
+    display: flex;
+    justify-content: space-between;
+    .sizeSelect strong {
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .sizeGuide {
+      font-size: 12px;
+      color: #aeaeae;
+    }
+  }
+}

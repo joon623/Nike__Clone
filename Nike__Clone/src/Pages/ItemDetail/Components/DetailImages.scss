@@ -1,0 +1,28 @@
+.DetailImages {
+  width: calc(100% - 449px);
+  padding: 0 54px;
+
+  .imageList {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      padding-left: 12px;
+      padding-bottom: 12px;
+
+      img {
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      @media (min-width: 906px) {
+        width: 50%;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

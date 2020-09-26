@@ -1,0 +1,30 @@
+.activeModal {
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  background-color: #ffffff;
+  cursor: url("/images/ItemDetail/minus.png") 15 15, zoom-in;
+  scroll-behavior: smooth;
+
+  img {
+    width: 100%;
+    margin: 40px 0;
+  }
+
+  .exit {
+    position: fixed;
+    top: 0;
+    right: 20px;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+  }
+}
+
+.noModal {
+  display: none;
+}

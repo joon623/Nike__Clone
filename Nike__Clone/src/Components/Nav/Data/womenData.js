@@ -1,0 +1,86 @@
+const WomenData = [
+  {
+    id: 1,
+    categoryTitle: "신상품",
+    mainUrl: "",
+    subcategory: [
+      { subTitle: "SNKRS", subUrl: "" },
+      { subTitle: "THE BEST", subUrl: "" },
+      { subTitle: "MEMBER SHOP", subUrl: "" },
+      { subTitle: "FEMME 컬렉션", subUrl: "" },
+      { subTitle: "브라 & 타이츠", subUrl: "" },
+      { subTitle: "홈트레이닝 컬렉션", subUrl: "" },
+      { subTitle: "나이키 트레일 컬렉션", subUrl: "" },
+      { subTitle: "나이키 데이브레이크", subUrl: "" },
+      { subTitle: "1 ON 1 상품 설명 서비스", subUrl: "" },
+      { subTitle: "SALE", subUrl: "" },
+    ],
+  },
+  {
+    id: 2,
+    categoryTitle: "신발",
+    mainUrl: "",
+    subcategory: [
+      { subTitle: "신발 전체", subUrl: "/WomenShoese" },
+      { subTitle: "라이프 스타일", subUrl: "" },
+      { subTitle: "러닝", subUrl: "/WomenRunning" },
+      { subTitle: "트레이닝 & 짐", subUrl: "" },
+      { subTitle: "조던", subUrl: "" },
+      { subTitle: "축구", subUrl: "" },
+      { subTitle: "골프", subUrl: "" },
+      { subTitle: "테니스", subUrl: "" },
+      { subTitle: "샌들 & 슬리퍼", subUrl: "" },
+    ],
+  },
+  {
+    id: 3,
+    categoryTitle: "의류",
+    mainUrl: "",
+    subcategory: [
+      { subTitle: "의류 전체", subUrl: "" },
+      { subTitle: "후디 & 크루", subUrl: "" },
+      { subTitle: "팬츠 & 숏 팬츠", subUrl: "" },
+      { subTitle: "타이츠 & 레깅스", subUrl: "" },
+      { subTitle: "스포츠 브라", subUrl: "" },
+      { subTitle: "탑 & 티셔츠", subUrl: "" },
+      { subTitle: "스커트 & 드레스", subUrl: "" },
+      { subTitle: "양말", subUrl: "" },
+    ],
+  },
+  {
+    id: 4,
+    categoryTitle: "용품",
+    mainUrl: "",
+    subcategory: [
+      { subTitle: "모자 & 헤드밴드", subUrl: "" },
+      { subTitle: "가방", subUrl: "" },
+      { subTitle: "애플워치", subUrl: "" },
+    ],
+  },
+  {
+    id: 5,
+    categoryTitle: "스포츠",
+    mainUrl: "",
+    subcategory: [
+      { subTitle: "러닝", subUrl: "" },
+      { subTitle: "트레이닝 & 짐", subUrl: "" },
+      { subTitle: "축구", subUrl: "" },
+      { subTitle: "골프", subUrl: "" },
+      { subTitle: "테니스", subUrl: "" },
+      { subTitle: "요가", subUrl: "" },
+    ],
+  },
+  {
+    id: 6,
+    categoryTitle: "브랜드",
+    mainUrl: "",
+    subcategory: [
+      { subTitle: "Nike Sportswear", subUrl: "" },
+      { subTitle: "NikeLab", subUrl: "" },
+      { subTitle: "Jordan", subUrl: "" },
+      { subTitle: "ACG", subUrl: "" },
+    ],
+  },
+];
+
+export default WomenData;

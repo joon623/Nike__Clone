@@ -1,0 +1,41 @@
+@import "../../../../Styles/common.scss";
+
+.ItemInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 1px solid $borderColor;
+  padding-top: 10px;
+  padding-bottom: 20px;
+
+  div {
+    margin-bottom: 20px;
+    font-size: 13px;
+  }
+
+  .mainCopy {
+    font-weight: bold;
+  }
+
+  .content {
+    line-height: 18px;
+  }
+
+  .colorNstyle:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+
+    .color,
+    .style {
+      background: no-repeat url("/images/ItemDetail/dot.png") left;
+      margin-bottom: 7px;
+      padding-left: 7px;
+    }
+
+    span:nth-child(3) {
+      color: #666;
+      text-decoration: underline;
+      margin-top: 5px;
+    }
+  }
+}

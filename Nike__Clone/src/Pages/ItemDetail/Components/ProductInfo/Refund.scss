@@ -1,0 +1,83 @@
+@import "../../../../Styles/common.scss";
+
+.Refund {
+  max-height: 72.6px;
+  overflow: hidden;
+  padding: 28px 0 0 6px;
+  border-bottom: 1px solid $borderColor;
+  transition: all 0.2s ease-in-out;
+
+  &.RefundVisible {
+    max-height: 100%;
+  }
+
+  .visibleContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .refundText {
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .refundTypeNarrow {
+      @include flexCenter();
+
+      .refundType {
+        font-size: 14px;
+        font-weight: normal;
+        color: #999;
+      }
+
+      .arrow {
+        i {
+          display: inline-block;
+          height: 15px;
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+
+  .hiddenContent {
+    font-size: 13px;
+    color: #111111;
+
+    .freeService,
+    .receiveRefund,
+    .refundGuide,
+    .asGuide,
+    .childProtect {
+      margin-bottom: 30px;
+
+      div {
+        margin-bottom: 10px;
+        background: no-repeat url("/images/ItemDetail/dot.png") left;
+        padding-left: 7px;
+      }
+      div:first-child {
+        font-weight: bold;
+        font-size: 14px;
+        margin-top: 10px;
+        background: none;
+        padding: 0;
+      }
+    }
+
+    .freeService {
+      margin-top: 30px;
+    }
+
+    .receiveRefund {
+      div:nth-child(4) {
+        span {
+          text-decoration: underline;
+          margin-top: 5px;
+          font-size: 13px;
+          color: #666;
+        }
+      }
+    }
+  }
+}

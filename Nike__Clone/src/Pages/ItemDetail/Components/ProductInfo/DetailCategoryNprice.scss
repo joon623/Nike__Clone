@@ -1,0 +1,39 @@
+.DetailCategoryNprice {
+  .categoryNprice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .category {
+      span {
+        size: 16px;
+      }
+    }
+
+    .price {
+      strong {
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+
+    .itemName {
+      font-size: 28px;
+    }
+  }
+
+  .itemName {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .enviromentFriendly {
+    margin-top: 20px;
+    span {
+      color: #fa5400;
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,75 @@
+const KidsData = [
+  {
+    id: 1,
+    categoryTitle: "신상품",
+    mainUrl: "",
+    subcategory: [
+      { subTitle: "가을 트렌디 룩", subUrl: "" },
+      { subTitle: "리바이벌 컬렉션", subUrl: "" },
+      { subTitle: "플로럴 에센셜", subUrl: "" },
+      { subTitle: "패밀리 룩 컬렉션", subUrl: "" },
+      { subTitle: "조던 키즈", subUrl: "" },
+      { subTitle: "키즈 에어 포스 1", subUrl: "" },
+      { subTitle: "베이비 샵", subUrl: "" },
+      { subTitle: "SALE", subUrl: "" },
+    ],
+  },
+  {
+    id: 2,
+    categoryTitle: "신발",
+    mainUrl: "",
+    subcategory: [
+      { subTitle: "베이비(160mm 이하)", subUrl: "" },
+      { subTitle: "리틀키즈(165~220mm)", subUrl: "" },
+      { subTitle: "주니어(225~250mm)", subUrl: "" },
+      { subTitle: "라이프스타일", subUrl: "" },
+      { subTitle: "러닝", subUrl: "" },
+      { subTitle: "축구", subUrl: "" },
+      { subTitle: "농구", subUrl: "" },
+      { subTitle: "샌들 & 슬리퍼", subUrl: "" },
+    ],
+  },
+  {
+    id: 3,
+    categoryTitle: "의류",
+    mainUrl: "",
+    subcategory: [
+      { subTitle: "베이비 (0~4세)", subUrl: "" },
+      { subTitle: "리틀키즈 (4~7세)", subUrl: "" },
+      { subTitle: "주니어 (8~13세)", subUrl: "" },
+      { subTitle: "후디 & 크루", subUrl: "" },
+      { subTitle: "재킷 & 베스트", subUrl: "" },
+      { subTitle: "팬츠 & 레깅스", subUrl: "" },
+      { subTitle: "트랙수트 & 세트", subUrl: "" },
+      { subTitle: "탑 & 티셔츠", subUrl: "" },
+      { subTitle: "스커트 & 드레스", subUrl: "" },
+      { subTitle: "가방 & 모자 & 용품", subUrl: "" },
+    ],
+  },
+  {
+    id: 4,
+    categoryTitle: "",
+    subcategory: [{}],
+  },
+  {
+    id: 5,
+    categoryTitle: "스포츠",
+    mainUrl: "",
+    subcategory: [
+      { subTitle: "러닝", subUrl: "" },
+      { subTitle: "트레이닝 & 짐", subUrl: "" },
+      { subTitle: "축구", subUrl: "" },
+      { subTitle: "골프", subUrl: "" },
+      { subTitle: "테니스", subUrl: "" },
+      { subTitle: "요가", subUrl: "" },
+    ],
+  },
+  {
+    id: 6,
+    categoryTitle: "",
+    mainUrl: "",
+    subcategory: [{}],
+  },
+];
+
+export default KidsData;

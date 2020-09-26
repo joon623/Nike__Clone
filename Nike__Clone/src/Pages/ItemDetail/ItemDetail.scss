@@ -1,0 +1,78 @@
+@import "../../Styles/common.scss";
+
+.ItemDetail {
+  max-width: 1440px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 181px auto 50px auto;
+
+  i.fa-angle-down,
+  i.fa-angle-up {
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 765px) {
+  .ItemDetail {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .DetailImages {
+      width: 100%;
+    }
+
+    .ProductInfo {
+      width: 80%;
+      margin: auto;
+      padding: 0;
+
+      .DetailCategoryNprice,
+      .DifferentColorItem,
+      .SelectSize,
+      .SizeBox,
+      .Quantity {
+        display: none;
+      }
+
+      .Purchase {
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px 10px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: #f6f6f6;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .purchaseButton {
+          flex: 1;
+          order: 1;
+          display: flex;
+          justify-content: flex-end;
+          .directBuy {
+            width: 95%;
+          }
+        }
+        .basketNwishList {
+          flex: 1;
+
+          button:nth-child(1) {
+            width: 95%;
+            margin: 0;
+          }
+
+          button:nth-child(2) {
+            display: none;
+          }
+        }
+      }
+
+      .Refund {
+        margin-bottom: 100px;
+      }
+    }
+  }
+}

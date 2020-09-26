@@ -1,0 +1,130 @@
+@import "../../../../Styles/common.scss";
+
+.Delivery {
+  display: flex;
+  flex-direction: column;
+  max-height: 72.6px;
+  padding: 28px 0 27px 6px;
+  border-bottom: 1px solid $borderColor;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+
+  &.DeliveryActive {
+    max-height: 100%;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .deliveryText {
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .typeNarrow {
+      @include flexCenter();
+
+      .deliveryType {
+        font-size: 14px;
+        font-weight: normal;
+        color: #999;
+      }
+      .arrow {
+        i {
+          display: inline-block;
+          height: 15px;
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+
+  .hiddenContent {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    align-items: flex-start;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    .normalDelivery {
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+
+        .headerNormal {
+          font-weight: bold;
+          font-size: 14px;
+          margin-bottom: 20px;
+        }
+        ul {
+          li {
+            background: no-repeat url("/images/ItemDetail/dot.png") left;
+            margin-bottom: 5px;
+            padding-left: 7px;
+          }
+        }
+      }
+    }
+
+    .todayDelivery {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      font-size: 13px;
+
+      div {
+        font-weight: bold;
+        margin-bottom: 20px;
+        font-size: 14px;
+
+        span {
+          background-color: black;
+          display: inline-block;
+          padding: 0 5px;
+          font-size: 12px;
+          color: #fff;
+          margin-left: 5px;
+          line-height: 15px;
+          font-weight: normal;
+          height: 15px;
+        }
+      }
+
+      ul {
+        li {
+          background: no-repeat url("/images/ItemDetail/dot.png") left;
+          margin-bottom: 5px;
+          padding-left: 7px;
+
+          span:nth-child(1) {
+            background: no-repeat url("/images/ItemDetail/nikedelivery.png")
+              center;
+            display: inline-block;
+            background-size: 100% auto;
+            width: 34px;
+            height: 13px;
+            transform: translateY(-4px);
+            position: relative;
+            top: 6px;
+          }
+          span:nth-child(2) {
+            background-color: black;
+            display: inline-block;
+            padding: 0 5px;
+            font-size: 12px;
+            color: #fff;
+            margin-left: 5px;
+            line-height: 15px;
+            font-weight: normal;
+            height: 15px;
+          }
+        }
+      }
+    }
+  }
+}

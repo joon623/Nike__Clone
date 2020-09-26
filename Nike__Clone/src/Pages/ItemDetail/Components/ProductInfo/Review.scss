@@ -1,0 +1,148 @@
+@import "../../../../Styles/common.scss";
+
+.Review {
+  max-height: 72.6px;
+  align-items: center;
+  padding: 28px 0 27px 6px;
+  border-bottom: 1px solid $borderColor;
+  overflow: hidden;
+  transition: all ease-in-out 0.2s;
+
+  &.ReviewVisible {
+    max-height: 100%;
+    height: auto;
+  }
+
+  .visibleReview {
+    display: flex;
+    justify-content: space-between;
+    .reviewText {
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .ratingNarrow {
+      @include flexCenter();
+
+      .rating {
+        img {
+          height: 15px;
+          margin-left: 10px;
+        }
+      }
+      .arrow {
+        i {
+          display: inline-block;
+          height: 15px;
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+
+  .hiddenReview {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #000;
+    .writeReview {
+      .average {
+        display: flex;
+        justify-content: flex-start;
+
+        .averageRating {
+          img {
+            height: 14px;
+            margin-left: 10px;
+          }
+          img:first-child {
+            margin: 0;
+          }
+        }
+
+        .averageRatingText {
+          font-size: 13px;
+          margin-left: 10px;
+        }
+      }
+
+      .userWriteReview {
+        font-size: 13px;
+        text-decoration: underline;
+        color: #2e2e2e;
+        margin-top: 10px;
+      }
+    }
+
+    .writtenReview {
+      margin-top: 30px;
+
+      article {
+        margin-bottom: 30px;
+      }
+      .UserReview {
+        header {
+          font-size: 14px;
+          font-weight: 900;
+          color: #111111;
+          line-height: 22px;
+          letter-spacing: 0;
+          margin-bottom: 5px;
+        }
+
+        .reviewInfo {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 60%;
+          font-size: 12px;
+          color: #828282;
+
+          .userName {
+            margin-left: 30px;
+          }
+
+          .averageRating {
+            img {
+              height: 13px;
+              margin-left: 5px;
+            }
+
+            img:first-child {
+              margin: 0;
+            }
+          }
+        }
+
+        .content {
+          margin-top: 20px;
+          margin-bottom: 15px;
+          line-height: 18px;
+        }
+
+        .likeOrdislike {
+          img {
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+          }
+          span {
+            margin-right: 5px;
+            color: #666;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+
+    .moreReview {
+      margin-top: 24px;
+      span {
+        display: inline-block;
+        border-bottom: 1px solid #2e2e2e;
+        padding-bottom: 2px;
+        font-size: 13px;
+        color: #111;
+      }
+    }
+  }
+}

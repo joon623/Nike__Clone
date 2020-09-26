@@ -1,0 +1,9 @@
+.MenShoesItems {
+  padding: 0px 48px 0px 40px;
+  margin-left: 255px;
+  transition: 0.25s;
+
+  &.isActive {
+    margin-left: 0px;
+  }
+}

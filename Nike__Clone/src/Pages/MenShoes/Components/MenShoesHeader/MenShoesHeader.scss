@@ -1,0 +1,77 @@
+@import "../../../../Styles/common.scss";
+
+.MenShoesHeader {
+  padding: 20px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 3;
+  background-color: $backgroundColor;
+  transition: 0.05s linear;
+  margin-top: 135px;
+
+  &.scrolled {
+    position: fixed;
+    margin-top: 92px;
+  }
+  .titleSection {
+    width: 82vw;
+    padding-left: 30px;
+
+    &.scrolledTitleSection {
+      width: 87vw;
+    }
+
+    .titleSub {
+      color: #111111;
+      margin-bottom: 10px;
+    }
+
+    .titleMain {
+      color: #111111;
+      font-size: 22px;
+      font-weight: 500;
+      transition: 0.25s;
+      &.scrolledTitle {
+        font-size: 17px;
+      }
+    }
+
+    .titleSpace {
+      padding-top: 20px;
+    }
+  }
+
+  .sortingSection {
+    margin-right: 25px;
+
+    &.scrolledSortingSection {
+      width: 13%;
+    }
+
+    .sortingIcons {
+      padding-top: 43px;
+      display: flex;
+      justify-content: flex-end;
+
+      .sortingFilter {
+        margin-right: 30px;
+        font-size: 16px;
+        font-weight: 400;
+        cursor: pointer;
+        i {
+          margin-left: 5px;
+        }
+      }
+
+      .sortingInOrder {
+        padding-right: 5px;
+        font-size: 16px;
+        font-weight: 400;
+        cursor: pointer;
+        i {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "LinkCoData": [
+    {
+      "id": 1,
+      "coName": "Nike"
+    },
+    {
+      "id": 2,
+      "coName": "Join Us"
+    },
+    {
+      "id": 3,
+      "coName": "Nike이미지"
+    },
+    {
+      "id": 4,
+      "coName": "CONVERSE"
+    }
+  ]
+}
