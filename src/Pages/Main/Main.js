@@ -2,9 +2,10 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import Nav from "../../Components/Nav/Nav";
 import Footer from "../../Components/Footer/Footer";
-import "./Main.scss";
+import GoToTop from "../../Components/GoToTop/GoToTop";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "./Main.scss";
 
 export default class Main extends Component {
   constructor() {
@@ -42,6 +43,7 @@ export default class Main extends Component {
     const { display } = this.state;
     return (
       <>
+        <GoToTop />
         <Nav />
         <div className="Main">
           <div className="mainVideo">

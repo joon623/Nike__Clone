@@ -6,10 +6,8 @@ class ShoppingBasket extends Component {
     const {
       clicked,
       goToDetail,
-      localBasketData,
       allMount,
       deleteBasketItem,
-      basketItems,
       filteredItems,
     } = this.props;
     return (

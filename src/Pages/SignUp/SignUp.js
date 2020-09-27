@@ -6,6 +6,7 @@ import TermsInfo from "./Components/TermsInfo";
 import SelectInfo from "./Components/SelectInfo";
 import { signUpAPI } from "../../config";
 import "./SignUp.scss";
+import GoToTop from "../../Components/GoToTop/GoToTop";
 
 class SignUp extends Component {
   state = {
@@ -318,6 +319,7 @@ class SignUp extends Component {
     return (
       <div className="SignUp">
         <Nav />
+        <GoToTop />
         <section className="section">
           <div>
             <div className="signUpText">

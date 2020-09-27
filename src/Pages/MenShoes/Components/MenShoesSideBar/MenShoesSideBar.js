@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import MenShoesSize from "./Components/MenShoesSize";
 import MenShoesColor from "./Components/MenShoesColor";
+import { listMockData } from "../../../../config";
 import "../MenShoesSideBar/MenShoesSideBar.scss";
 
 class MenShoesSideBar extends Component {
@@ -16,7 +17,7 @@ class MenShoesSideBar extends Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:3000/data/menShoes/MenShoes.json")
+    fetch(`${listMockData}`)
       .then((res) => res.json())
       .then((result) => {
         this.setState({

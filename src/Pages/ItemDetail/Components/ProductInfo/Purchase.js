@@ -17,7 +17,6 @@ class Purchase extends Component {
       detailImage,
       floatWaitModal,
       modalWait,
-      localBasketData,
       allMount,
       deleteBasketItem,
       basketItems,
@@ -48,10 +47,8 @@ class Purchase extends Component {
           name={name}
           detailImage={detailImage}
           storeData={this.storeData}
-          localBasketData={localBasketData}
           allMount={allMount}
           deleteBasketItem={deleteBasketItem}
-          basketItems={basketItems}
           filteredItems={filteredItems}
         />
         <WaitModal modalWait={modalWait} floatWaitModal={floatWaitModal} />

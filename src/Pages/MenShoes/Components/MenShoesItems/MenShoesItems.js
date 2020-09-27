@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import MenShoesShoes from "./Components/MenShoesShoes";
 import { productAPI } from "../../../../config";
+import { listMockData } from "../../../../config";
 import "./MenShoesItems.scss";
 
 class MenShoesItems extends Component {
@@ -13,7 +14,7 @@ class MenShoesItems extends Component {
   }
 
   componentDidMount() {
-    fetch(`${productAPI}`)
+    fetch(`${listMockData}`)
       .then((res) => res.json())
       .then((res) => {
         this.setState({

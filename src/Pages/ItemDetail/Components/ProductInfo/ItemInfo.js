@@ -12,14 +12,6 @@ class ItemInfo extends Component {
     };
   }
 
-  componentDidUpdate(prevProps, prevState) {
-    const { style } = this.state;
-    const { handleStyle } = this.props;
-    if (prevState.style !== style) {
-      handleStyle(style);
-    }
-  }
-
   render() {
     const { style, title, content, color } = this.props;
     return (

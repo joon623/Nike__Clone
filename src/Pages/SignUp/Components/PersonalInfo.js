@@ -6,7 +6,6 @@ class PersonalInfo extends Component {
     return (
       <div className="personalAgree">
         <span className="personalTitle">개인정보 수집.이용동의</span>
-
         <table className="personalInfo">
           <thead>
             <tr>
@@ -48,7 +47,6 @@ class PersonalInfo extends Component {
             </tr>
           </tbody>
         </table>
-
         <div className="personalCheck">
           <input
             className="personalBox"
