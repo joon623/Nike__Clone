@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import "./MovoToTop.scss";
+import "./GoToTop.scss";
 
-export default class MoveToTop extends Component {
+export default class GoToTop extends Component {
   constructor() {
     super();
     this.state = {

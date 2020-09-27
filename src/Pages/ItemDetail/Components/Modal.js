@@ -6,7 +6,7 @@ class Modal extends Component {
     const { modal, handleModal, detailImage } = this.props;
     return (
       <div className={modal ? "activeModal" : "noModal"} onClick={handleModal}>
-        {detailImage.map((el, idx) => (
+        {detailImage?.map((el, idx) => (
           <img id={`modal${idx}`} key={idx} src={el} alt="DetailImage" />
         ))}
         <img

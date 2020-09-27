@@ -29,7 +29,7 @@ class ProductInfo extends Component {
   }
 
   componentDidMount() {
-    if (localStorage.getItem("basketData") === "null") {
+    if (localStorage.getItem("basketData") === null) {
       localStorage.setItem(
         `basketData`,
         JSON.stringify(this.state.basketItems)
@@ -42,19 +42,6 @@ class ProductInfo extends Component {
       });
     }
   }
-
-  handlePrice = (pri, name) => {
-    this.setState({
-      price: pri,
-      name,
-    });
-  };
-
-  handleStyle = (sty) => {
-    this.setState({
-      style: sty,
-    });
-  };
 
   handleQuantity = (qty) => {
     this.setState({
@@ -103,18 +90,18 @@ class ProductInfo extends Component {
 
   storeData = () => {
     const { basketItems, size, quantity } = this.state;
-    const { detailImage } = this.props;
+    const { detailImage, style, price, name } = this.props;
     this.setState(
       {
         basketItems: basketItems.concat([
           {
             basketItemId: this.state.basketItems.length,
             localImage: detailImage,
-            style: this.props.style,
+            style,
             size,
             quantity,
-            price: this.props.price,
-            name: this.props.name,
+            price,
+            name,
             willDelete: true,
           },
         ]),
@@ -174,6 +161,7 @@ class ProductInfo extends Component {
       size,
       modalWait,
       allMount,
+      filteredItems,
     } = this.state;
     const { detailImage, name, price, title, content, color } = this.props;
     return (
@@ -203,10 +191,8 @@ class ProductInfo extends Component {
           floatWaitModal={this.floatWaitModal}
           modalWait={modalWait}
           allMount={allMount}
-          localBasketData={JSON.parse(localStorage.getItem("basketData"))}
           deleteBasketItem={this.deleteBasketItem}
-          basketItems={this.state.basketItems}
-          filteredItems={this.state.filteredItems}
+          filteredItems={filteredItems}
         />
         <DeliveryService />
         <ItemInfo

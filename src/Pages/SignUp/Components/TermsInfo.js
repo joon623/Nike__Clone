@@ -3,7 +3,6 @@ import React, { Component } from "react";
 class TermsInfo extends Component {
   render() {
     const { clickE } = this.props;
-
     return (
       <div className="termsContainer">
         <div className="termsBox">
@@ -1354,7 +1353,6 @@ class TermsInfo extends Component {
             대체합니다.
           </p>
         </div>
-
         <div className="termsCheck">
           <input
             className="checkBox"
