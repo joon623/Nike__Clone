@@ -1,9 +1,9 @@
-.Item {
+.RecommendItem {
   max-width: 1440px;
   padding: 100px 54px;
+  padding-right: 0;
   overflow: hidden;
   outline: none;
-  // margin: 0 auto;
 
   @media (max-width: 765px) {
     display: none;

@@ -4,6 +4,7 @@ import MenShoes from "./Pages/MenShoes/MenShoes";
 import ItemDetail from "./Pages/ItemDetail/ItemDetail";
 import Main from "./Pages/Main/Main";
 import SignUp from "./Pages/SignUp/SignUp";
+import Cart from "./Components/Cart/Cart";
 
 class Routes extends React.Component {
   render() {
@@ -14,6 +15,7 @@ class Routes extends React.Component {
           <Route exact path="/MenShoes" component={MenShoes} />
           <Route exact path="/MenShoes/:id" component={ItemDetail} />
           <Route exact path="/SignUp" component={SignUp} />
+          <Route exact path="/cart" component={Cart} />
         </Switch>
       </Router>
     );

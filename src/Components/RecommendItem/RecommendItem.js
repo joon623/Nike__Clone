@@ -31,7 +31,7 @@ class RecommendItem extends Component {
     };
     const { recommends } = this.state;
     return (
-      <section className="Item">
+      <section className="RecommendItem">
         <h2>추천 상품</h2>
         <Slider {...settings}>
           {recommends.map((el, idx) => (

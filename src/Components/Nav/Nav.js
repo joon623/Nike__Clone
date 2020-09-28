@@ -164,11 +164,13 @@ class Nav extends Component {
             </li>
             <li>
               <span className="linkMyMenu">
-                <img
-                  className="myMenuCartImg"
-                  src="/images/Nav/cartImg.svg"
-                  alt="장바구니 아이콘"
-                />
+                <Link to="/Cart">
+                  <img
+                    className="myMenuCartImg"
+                    src="/images/Nav/cartImg.svg"
+                    alt="장바구니 아이콘"
+                  />
+                </Link>
               </span>
             </li>
             <li>
