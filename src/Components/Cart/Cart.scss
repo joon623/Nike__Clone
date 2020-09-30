@@ -36,6 +36,7 @@
     .contentList {
       width: calc(100% - 420px);
       margin-right: 80px;
+
       .delteAll {
         border-top: 1px solid $borderColor;
         border-bottom: 1px solid $borderColor;
@@ -102,15 +103,19 @@
 
           .priceContainer {
             display: flex;
+
             .price {
               margin-right: 35px;
-              .originalPrice {
-                text-decoration: line-through;
-                margin-bottom: 15px;
-              }
 
-              .discountedPrice {
+              .originalPrice {
+                margin-bottom: 15px;
                 color: $orangeColor;
+              }
+            }
+
+            .deleteButton {
+              i {
+                cursor: pointer;
               }
             }
           }
@@ -120,6 +125,7 @@
 
     .orderScheduledAmount {
       width: 420px;
+      max-height: 350px;
       border: 1px solid $borderColor;
       text-align: left;
       font-size: 14px;
@@ -147,16 +153,6 @@
         padding-left: 20px;
         margin-bottom: 25px;
         font-weight: bold;
-      }
-
-      .CommodityAmount {
-        div {
-          span:nth-child(1) {
-            margin-right: 15px;
-            text-decoration: line-through;
-            color: #a5a5a5;
-          }
-        }
       }
 
       .commodityDiscount {
@@ -193,56 +189,6 @@
           outline: none;
           cursor: pointer;
         }
-      }
-    }
-  }
-
-  .emptyCart {
-    &.hideEmptyCart {
-      display: none;
-    }
-    h2 {
-      padding: 0;
-      margin: 0 0 15px 0;
-      font-size: 28px;
-      font-weight: bold;
-      line-height: 24px;
-      font-weight: bold;
-      letter-spacing: -0.2px;
-      color: #111111;
-    }
-
-    h4 {
-      width: 100%;
-      margin-top: 30px;
-      margin-bottom: 30px;
-      font-size: 16px;
-      color: #666;
-    }
-
-    .Content {
-      border-top: solid 1px $borderColor;
-      border-bottom: solid 1px $borderColor;
-      padding: 40px 0;
-
-      img {
-        width: 60px;
-        height: 80px;
-      }
-
-      div {
-        margin-top: 35px;
-        margin-bottom: 15px;
-      }
-
-      button {
-        width: 141px;
-        height: 40px;
-        background-color: #111111;
-        border: none;
-        outline: none;
-        color: #fff;
-        cursor: pointer;
       }
     }
   }

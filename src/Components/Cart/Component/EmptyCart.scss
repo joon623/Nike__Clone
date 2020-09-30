@@ -1,0 +1,56 @@
+@import "../../../Styles/common.scss";
+
+.EmptyCart {
+  max-width: 1440px;
+  text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 250px auto 0;
+  &.hideEmptyCart {
+    display: none;
+  }
+
+  h2 {
+    padding: 0;
+    margin: 0 0 15px 0;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 24px;
+    font-weight: bold;
+    letter-spacing: -0.2px;
+    color: #111111;
+  }
+
+  h4 {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #666;
+  }
+
+  .content {
+    border-top: solid 1px $borderColor;
+    border-bottom: solid 1px $borderColor;
+    padding: 40px 0;
+
+    img {
+      width: 60px;
+      height: 80px;
+    }
+
+    div {
+      margin-top: 35px;
+      margin-bottom: 15px;
+    }
+
+    button {
+      width: 141px;
+      height: 40px;
+      background-color: #111111;
+      border: none;
+      outline: none;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}

@@ -11,6 +11,7 @@ import Review from "./ProductInfo/Review";
 import Delivery from "./ProductInfo/Delivery";
 import Refund from "./ProductInfo/Refund";
 import "./ProductInfo.scss";
+import Cart from "../../../Components/Cart/Cart";
 
 class ProductInfo extends Component {
   constructor() {

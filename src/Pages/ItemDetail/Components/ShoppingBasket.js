@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./ShoppingBasket.scss";
 
 class ShoppingBasket extends Component {
@@ -67,9 +68,11 @@ class ShoppingBasket extends Component {
               <span>배송비는 주문서에서 확인이 가능합니다.</span>
             </div>
             <div className="button">
-              <button className="goToBasket">
-                <span>장바구니 가기</span>
-              </button>
+              <Link to="/Cart">
+                <button className="goToBasket">
+                  <span>장바구니 가기</span>
+                </button>
+              </Link>
               <button className="buy">
                 <span>바로구매</span>
               </button>

@@ -1,13 +1,43 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import Nav from "../Nav/Nav";
-import { Link } from "react-router-dom";
-import "./Cart.scss";
 import RecommendItem from "../RecommendItem/RecommendItem";
 import GoToTop from "../GoToTop/GoToTop";
+import EmptyCart from "./Component/EmptyCart";
+import "./Cart.scss";
 
 const Cart = () => {
-  const [haveItems, setItems] = React.useState(true);
+  const [haveItems, setItems] = useState(true);
+  const [basketData, setBasket] = useState([]);
+  const [filteredData, setFilter] = useState([]);
+  const [AllMount, setAllMount] = useState(0);
+  let totalCost = 0;
+
+  useEffect(() => {
+    localStorage.getItem("basketData") === null
+      ? setItems(false)
+      : setItems(true);
+    setBasket(JSON.parse(localStorage.getItem("basketData")));
+    document.title = "장바구니 - 나이키";
+  }, []);
+
+  useEffect(() => {
+    setFilter(basketData);
+  }, [basketData]);
+
+  basketData &&
+    basketData.forEach((el) => {
+      totalCost = totalCost + el?.price * el?.quantity;
+    });
+
+  const deleteItem = (idx) => {
+    const deltedData = basketData.filter((el) => {
+      return el.willDelete;
+    });
+    localStorage.setItem("basketData", JSON.stringify(deltedData));
+    setFilter(deltedData);
+  };
 
   return (
     <>
@@ -20,59 +50,65 @@ const Cart = () => {
             <div className="delteAll">
               <span>전체삭제</span>
             </div>
-            <div className="eachList">
-              <div className="imgAndInformation">
-                <img src="/images/MenShoes/NikeAirForce107.jpg" alt="product" />
-                <div className="productInfo">
-                  <div className="name">
-                    <span>나이키 대한민국 이그나이트 숏슬리브 티</span>
-                  </div>
-                  <div className="style">
-                    <span>스타일: CV2235-100</span>
-                  </div>
-                  <div className="size">
-                    <span>사이즈: 100(L)</span>
-                  </div>
-                  <div className="quantity">
-                    <span>수량: 1</span>
-                  </div>
-                  <div className="addWishListAndBuyLater">
-                    <div className="addWishList">
-                      <span>위시리스트에 추가</span>
+            {filteredData?.map((el, idx) => (
+              <div key={idx} className="eachList">
+                <div className="imgAndInformation">
+                  <img src={el?.localImage[0]} alt="product" />
+                  <div className="productInfo">
+                    <div className="name">
+                      <span>{el?.name}</span>
                     </div>
-                    <div className="buyLater">
-                      <span>나중에 구매하기</span>
+                    <div className="style">
+                      <span>스타일: {el?.style}</span>
+                    </div>
+                    <div className="size">
+                      <span>사이즈: {el?.size}</span>
+                    </div>
+                    <div className="quantity">
+                      <span>수량: {el?.quantity}</span>
+                    </div>
+                    <div className="addWishListAndBuyLater">
+                      <div className="addWishList">
+                        <span>위시리스트에 추가</span>
+                      </div>
+                      <div className="buyLater">
+                        <span>나중에 구매하기</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="optionAndPrice">
+                  <div className="optionChange">
+                    <span>옵션 변경</span>
+                  </div>
+                  <div className="priceContainer">
+                    <div className="price">
+                      <div className="originalPrice">
+                        <span>
+                          {(el?.price * el?.quantity).toLocaleString()}원
+                        </span>
+                      </div>
+                    </div>
+                    <div className="deleteButton">
+                      <i
+                        className="fas fa-times"
+                        onClick={() => {
+                          el.willDelete = false;
+                          deleteItem(idx);
+                        }}
+                      />
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="optionAndPrice">
-                <div className="optionChange">
-                  <span>옵션 변경</span>
-                </div>
-                <div className="priceContainer">
-                  <div className="price">
-                    <div className="originalPrice">
-                      <span>45,000원</span>
-                    </div>
-                    <div className="discountedPrice">
-                      <span>36,000원</span>
-                    </div>
-                  </div>
-                  <div className="deleteButton">
-                    <i class="fas fa-times"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
           <div className="orderScheduledAmount">
             <h2>주문예정금액</h2>
             <div className="CommodityAmount">
               <span>삼품금액</span>
               <div>
-                <span>45,000원</span>
-                <span>36,000원</span>
+                <span>{totalCost.toLocaleString()}원</span>
               </div>
             </div>
             <div className="expectedShip">
@@ -89,7 +125,7 @@ const Cart = () => {
             </div>
             <div className="totalPayalbeAmount">
               <span>총 결제 예정 금액</span>
-              <span>36,000원</span>
+              <span>{totalCost.toLocaleString()}원</span>
             </div>
             <div className="orderingButton">
               <button>
@@ -98,20 +134,8 @@ const Cart = () => {
             </div>
           </div>
         </div>
-        <div className={haveItems ? "emptyCart" : "emptyCart hideEmptyCart"}>
-          <div className="Content">
-            <img src="/images/Cart/cart-148964_1280.png" alt="cartImg" />
-            <div>
-              <span>장바구니에 담긴 상품이 없습니다.</span>
-            </div>
-            <Link to="/">
-              <button className="goBackShopping">
-                <span>계속 쇼핑하기</span>
-              </button>
-            </Link>
-          </div>
-        </div>
       </div>
+      <EmptyCart haveItems={haveItems} />
       <RecommendItem />
       <GoToTop />
       <Footer />
