@@ -49,7 +49,7 @@ class MenShoesHeader extends Component {
                 className={
                   showSideBar ? "fas fa-angle-down" : "fas fa-angle-up"
                 }
-              ></i>
+              />
             </div>
             <div className="sortingInOrder" onClick={sortToggle}>
               <span>신상품순</span>
@@ -57,7 +57,7 @@ class MenShoesHeader extends Component {
                 className={
                   isActivated ? "fas fa-angle-down" : "fas fa-angle-up"
                 }
-              ></i>
+              />
               <SortingBoard isActivated={isActivated} />
             </div>
           </div>

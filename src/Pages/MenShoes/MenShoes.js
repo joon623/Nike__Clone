@@ -6,6 +6,7 @@ import MenShoesSideBar from "./Components/MenShoesSideBar/MenShoesSideBar";
 import MenShoesItems from "./Components/MenShoesItems/MenShoesItems";
 import Footer from "../../Components/Footer/Footer";
 import DisplayWait from "./Components/Modal/DisplayWait";
+import GoToTop from "../../Components/GoToTop/GoToTop";
 import "./Components/MenShoesSideBar/Components/MenShoesSize";
 import "./MenShoes.scss";
 
@@ -65,30 +66,33 @@ class MenShoes extends Component {
     const { showSideBar, scrolled, filteredColor, modal } = this.state;
     const { toggleSideBar, targetValue, displayModal } = this;
     return (
-      <div className="MenShoes">
-        <Nav colorReset={filteredColor} />
-        <MenShoesHeader
-          toggleSideBar={toggleSideBar}
-          showSideBar={showSideBar}
-          scrolled={scrolled}
-        />
-        <DisplayWait modalValue={modal} />
-        <div className="main">
-          <MenShoesSideBar
+      <>
+        <div className="MenShoes">
+          <Nav colorReset={filteredColor} />
+          <MenShoesHeader
+            toggleSideBar={toggleSideBar}
             showSideBar={showSideBar}
             scrolled={scrolled}
-            targetValue={targetValue}
-            displayModal={displayModal}
           />
-          <MenShoesItems
-            showSideBar={showSideBar}
-            scrolled={scrolled}
-            filteredColor={filteredColor}
-            targetValue={targetValue}
-          />
+          <DisplayWait modalValue={modal} />
+          <main className="main">
+            <MenShoesSideBar
+              showSideBar={showSideBar}
+              scrolled={scrolled}
+              targetValue={targetValue}
+              displayModal={displayModal}
+            />
+            <MenShoesItems
+              showSideBar={showSideBar}
+              scrolled={scrolled}
+              filteredColor={filteredColor}
+              targetValue={targetValue}
+            />
+          </main>
+          <Footer />
         </div>
-        <Footer />
-      </div>
+        <GoToTop />
+      </>
     );
   }
 }
