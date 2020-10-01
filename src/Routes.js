@@ -11,7 +11,7 @@ class Routes extends React.Component {
     return (
       <Router>
         <Switch>
-          <Route exact path="/" component={Main} />
+          <Route exact path="/react-github-pages" component={Main} />
           <Route exact path="/MenShoes" component={MenShoes} />
           <Route exact path="/MenShoes/:id" component={ItemDetail} />
           <Route exact path="/SignUp" component={SignUp} />
