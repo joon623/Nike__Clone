@@ -1,0 +1,20 @@
+{
+  "MainCategory": [
+    {
+      "id": 1,
+      "coName": "NEW RELLEASE"
+    },
+    {
+      "id": 2,
+      "coName": "MEN"
+    },
+    {
+      "id": 3,
+      "coName": "WOMEN"
+    },
+    {
+      "id": 4,
+      "coName": "KIDS"
+    }
+  ]
+}

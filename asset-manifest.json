@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/joon623/Nike__Clone/static/css/main.3cbdcd3a.chunk.css",
+    "main.js": "/joon623/Nike__Clone/static/js/main.7f21e76a.chunk.js",
+    "main.js.map": "/joon623/Nike__Clone/static/js/main.7f21e76a.chunk.js.map",
+    "runtime-main.js": "/joon623/Nike__Clone/static/js/runtime-main.4017c09f.js",
+    "runtime-main.js.map": "/joon623/Nike__Clone/static/js/runtime-main.4017c09f.js.map",
+    "static/css/2.f2511b0c.chunk.css": "/joon623/Nike__Clone/static/css/2.f2511b0c.chunk.css",
+    "static/js/2.869a5e11.chunk.js": "/joon623/Nike__Clone/static/js/2.869a5e11.chunk.js",
+    "static/js/2.869a5e11.chunk.js.map": "/joon623/Nike__Clone/static/js/2.869a5e11.chunk.js.map",
+    "index.html": "/joon623/Nike__Clone/index.html",
+    "precache-manifest.41ffa2fbfb587472c57a0282d84c55b0.js": "/joon623/Nike__Clone/precache-manifest.41ffa2fbfb587472c57a0282d84c55b0.js",
+    "service-worker.js": "/joon623/Nike__Clone/service-worker.js",
+    "static/css/2.f2511b0c.chunk.css.map": "/joon623/Nike__Clone/static/css/2.f2511b0c.chunk.css.map",
+    "static/css/main.3cbdcd3a.chunk.css.map": "/joon623/Nike__Clone/static/css/main.3cbdcd3a.chunk.css.map",
+    "static/js/2.869a5e11.chunk.js.LICENSE.txt": "/joon623/Nike__Clone/static/js/2.869a5e11.chunk.js.LICENSE.txt",
+    "static/media/slick-theme.css": "/joon623/Nike__Clone/static/media/slick.f97e3bbf.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4017c09f.js",
+    "static/css/2.f2511b0c.chunk.css",
+    "static/js/2.869a5e11.chunk.js",
+    "static/css/main.3cbdcd3a.chunk.css",
+    "static/js/main.7f21e76a.chunk.js"
+  ]
+}
