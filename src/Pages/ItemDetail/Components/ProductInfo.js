@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import DetailCategoryNprice from "./ProductInfo/DetailCategoryNprice";
-import DifferentColorItem from "./ProductInfo/DifferentColorItem";
 import SelectSize from "./ProductInfo/SelectSize";
 import SizeBox from "./ProductInfo/SizeBox";
 import Quantity from "./ProductInfo/Quantity";
@@ -11,7 +10,6 @@ import Review from "./ProductInfo/Review";
 import Delivery from "./ProductInfo/Delivery";
 import Refund from "./ProductInfo/Refund";
 import "./ProductInfo.scss";
-import Cart from "../../../Components/Cart/Cart";
 
 class ProductInfo extends Component {
   constructor() {

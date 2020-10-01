@@ -19,6 +19,7 @@ const Cart = () => {
       ? setItems(false)
       : setItems(true);
     setBasket(JSON.parse(localStorage.getItem("basketData")));
+    setAllMount();
     document.title = "장바구니 - 나이키";
   }, []);
 
@@ -26,12 +27,14 @@ const Cart = () => {
     setFilter(basketData);
   }, [basketData]);
 
-  basketData &&
-    basketData.forEach((el) => {
+  useEffect(() => {
+    filteredData.forEach((el) => {
       totalCost = totalCost + el?.price * el?.quantity;
     });
+    setAllMount(totalCost);
+  }, [filteredData]);
 
-  const deleteItem = (idx) => {
+  const deleteItem = () => {
     const deltedData = basketData.filter((el) => {
       return el.willDelete;
     });
@@ -125,7 +128,7 @@ const Cart = () => {
             </div>
             <div className="totalPayalbeAmount">
               <span>총 결제 예정 금액</span>
-              <span>{totalCost.toLocaleString()}원</span>
+              <span>{AllMount.toLocaleString()}원</span>
             </div>
             <div className="orderingButton">
               <button>
