@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import Nav from "../Nav/Nav";
 import RecommendItem from "../RecommendItem/RecommendItem";
@@ -15,11 +14,11 @@ const Cart = () => {
   let totalCost = 0;
 
   useEffect(() => {
+    localStorage.getItem("basketData") === "[]" ||
     localStorage.getItem("basketData") === null
       ? setItems(false)
       : setItems(true);
     setBasket(JSON.parse(localStorage.getItem("basketData")));
-    setAllMount();
     document.title = "장바구니 - 나이키";
   }, []);
 
@@ -28,10 +27,15 @@ const Cart = () => {
   }, [basketData]);
 
   useEffect(() => {
-    filteredData.forEach((el) => {
-      totalCost = totalCost + el?.price * el?.quantity;
-    });
+    filteredData &&
+      filteredData.forEach((el) => {
+        totalCost = totalCost + el?.price * el?.quantity;
+      });
     setAllMount(totalCost);
+    localStorage.getItem("basketData") === "[]" ||
+    localStorage.getItem("basketData") === null
+      ? setItems(false)
+      : setItems(true);
   }, [filteredData]);
 
   const deleteItem = () => {

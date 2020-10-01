@@ -33,7 +33,7 @@ class ItemDetail extends Component {
   };
 
   componentDidMount() {
-    // server 킬떄 사용
+    // server 킬떄 사용 !! json데이터 형식과 mock 데이터 형식 차이가 있음
     // const id = this.props.match.params.id;
     // fetch(`${productAPI}/${id}`)
     //   .then((res) => res.json())
@@ -63,6 +63,7 @@ class ItemDetail extends Component {
           color: result.itemInfo.color,
         });
       });
+    document.title = `나이키`;
   }
 
   render() {
