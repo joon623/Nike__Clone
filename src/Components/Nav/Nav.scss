@@ -34,7 +34,6 @@
           .linkName {
             opacity: 0.6;
             font-size: 12px;
-            font-family: navCategoryFont;
             text-decoration: none;
             color: #111111;
           }
@@ -49,7 +48,6 @@
             &:hover {
               opacity: 1;
               font-size: 12px;
-              font-family: navCategoryFont;
             }
           }
 
@@ -103,7 +101,6 @@
 
         .linkMyMenuName {
           font-size: 12px;
-          font-family: navCategoryFont;
           cursor: pointer;
 
           &.hide {
@@ -178,7 +175,6 @@
             span {
               height: 21px;
               font-size: 12px;
-              font-family: navCategoryFont;
               font-weight: 400;
               display: block;
               padding-bottom: 6px;
@@ -279,7 +275,6 @@
 
                     .categoryTemaLinkMain {
                       font-size: 16px;
-                      font-family: navCategoryMainFont;
                       color: #111111;
                       text-decoration: none;
                       cursor: pointer;
@@ -316,7 +311,6 @@
 
                     .nrMenLink {
                       font-size: 14px;
-                      font-family: navCategoryFont;
                       font-weight: 400;
                       color: #111111;
                       text-decoration: none;
@@ -328,7 +322,6 @@
 
                     .nrMenLinkMain {
                       font-size: 16px;
-                      font-family: navCategoryMainFont;
                       color: #111111;
                       text-decoration: none;
                       cursor: pointer;
@@ -357,7 +350,6 @@
 
                     .nrWomenLink {
                       font-size: 14px;
-                      font-family: navCategoryFont;
                       font-weight: 400;
                       color: #111111;
                       text-decoration: none;
@@ -370,7 +362,6 @@
 
                     .nrWomenLinkMain {
                       font-size: 16px;
-                      font-family: navCategoryMainFont;
                       color: #111111;
                       text-decoration: none;
                       cursor: pointer;
@@ -400,7 +391,6 @@
 
                     .nrSportsLink {
                       font-size: 14px;
-                      font-family: navCategoryFont;
                       font-weight: 400;
                       color: #111111;
                       text-decoration: none;
@@ -412,7 +402,6 @@
                     }
 
                     .nrSportsLinkMain {
-                      font-family: navCategoryMainFont;
                       font-size: 16px;
                       color: #111111;
                       text-decoration: none;
@@ -442,13 +431,11 @@
                     min-height: 25px;
 
                     .nrBrandLinkMain {
-                      font-family: navCategoryMainFont;
                       font-size: 16px;
                     }
 
                     .nrBrandLink {
                       font-size: 14px;
-                      font-family: navCategoryFont;
                       font-weight: 400;
                       color: #111111;
                       text-decoration: none;
@@ -460,7 +447,6 @@
                     }
 
                     .nrBrandLinkMain {
-                      font-family: navCategoryMainFont;
                       font-size: 16px;
                       color: #111111;
                       cursor: pointer;

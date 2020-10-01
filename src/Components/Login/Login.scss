@@ -74,7 +74,6 @@
 
         .loginNikeText {
           margin: 15px;
-          font-family: navCategoryMainFont;
           font-size: 24px;
         }
       }
@@ -85,7 +84,6 @@
             display: block;
             text-align: left;
             padding-bottom: 10px;
-            font-family: navCategoryFont;
             font-size: 10px;
             color: red;
 
@@ -110,7 +108,6 @@
             display: block;
             margin-bottom: 10px;
             text-align: left;
-            font-family: navCategoryFont;
             font-size: 10px;
             color: red;
 
@@ -132,13 +129,11 @@
 
               .loginCon {
                 font-size: 12px;
-                font-family: navCategoryFont;
                 color: #8d8d8d;
               }
             }
 
             .findId {
-              font-family: navCategoryFont;
               color: #bcbcbc;
               font-size: 12px;
             }
@@ -153,7 +148,6 @@
               border: none;
               color: white;
               background-color: #000000;
-              font-family: navCategoryFont;
               cursor: pointer;
             }
 
@@ -165,7 +159,6 @@
               outline: 0;
               border: none;
               background-color: #feec34;
-              font-family: navCategoryFont;
               cursor: pointer;
 
               .kakaoLogo {
@@ -184,7 +177,6 @@
               outline: 0;
               border: none;
               background-color: #485a96;
-              font-family: navCategoryFont;
               cursor: pointer;
 
               .faceBookLogo {
@@ -204,13 +196,11 @@
               .loginSignupText {
                 font-size: 11px;
                 color: #bcbcbc;
-                font-family: navCategoryFont;
               }
 
               .loginSignupBtn {
                 font-size: 11px;
                 color: #000000;
-                font-family: navCategoryFont;
                 text-decoration: underline;
                 cursor: pointer;
               }
@@ -218,7 +208,6 @@
 
             .unknownUser {
               font-size: 11px;
-              font-family: navCategoryFont;
               color: #000000;
               text-decoration: underline;
               cursor: pointer;

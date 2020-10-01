@@ -35,17 +35,17 @@ class Footer extends Component {
           <div className="social">
             <span>SOCIAL</span>
             <div className="socialIcon">
-              <i className="fab fa-twitter"></i>
-              <i className="fab fa-facebook"></i>
-              <i className="fab fa-youtube"></i>
-              <i className="fab fa-instagram"></i>
+              <i className="fab fa-twitter" />
+              <i className="fab fa-facebook" />
+              <i className="fab fa-youtube" />
+              <i className="fab fa-instagram" />
             </div>
           </div>
         </header>
         <section className="section">
           <div>
             <span>
-              <i className="fas fa-map-marker"></i>
+              <i className="fas fa-map-marker" />
             </span>
             <span>대한민국</span>
             <span>ⓒ 2020 Nike, Inc. All Rights Reserved</span>

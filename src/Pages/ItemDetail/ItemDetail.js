@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import DetailImages from "./Components/DetailImages";
 import ProductInfo from "./Components/ProductInfo";
-import RecommendItem from "./Components/Recommand/RecommenItem";
 import Nav from "../../Components/Nav/Nav";
+import RecommendItem from "../../Components/RecommendItem/RecommendItem";
 import Footer from "../../Components/Footer/Footer";
 import GoToTop from "../../Components/GoToTop/GoToTop";
 import { productAPI } from "../../config";

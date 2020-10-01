@@ -17,6 +17,7 @@ export default class Main extends Component {
 
   componentDidMount() {
     this.display();
+    document.title = "나이키";
   }
 
   display = () => {
