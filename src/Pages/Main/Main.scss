@@ -2,6 +2,7 @@
   width: 100%;
   margin: auto;
   margin-top: 108px;
+
   h1 {
     font-weight: bold;
     font-size: 43px;
@@ -48,7 +49,7 @@
     margin-top: 60px;
     margin-bottom: 80px;
     text-align: center;
-    font-family: "Noto Sans KR", sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     letter-spacing: -1px;
     color: #111111;
 
@@ -179,6 +180,7 @@
     button {
       background-color: rgba(0, 0, 0, 0);
     }
+
     .items {
       .collectionInfo {
         text-align: left;

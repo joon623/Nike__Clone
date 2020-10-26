@@ -1,5 +1,9 @@
-import React, { Component } from "react";
-import "./Footer.scss";
+import React, { Component } from 'react';
+import {
+  FOOTER_INFORMATION,
+  CUSTOMERSERVICE_DATA,
+} from './Data/FOOTER_INFORMATION';
+import './Footer.scss';
 
 class Footer extends Component {
   render() {
@@ -8,24 +12,17 @@ class Footer extends Component {
         <header className="header">
           <div className="information">
             <ul>
-              <li>매장안내</li>
-              <li>로그인</li>
-              <li>회원가입</li>
+              {FOOTER_INFORMATION.map((el, idx) => (
+                <li key={idx}>{el}</li>
+              ))}
             </ul>
           </div>
           <div className="customerService">
             <span>고객센터</span>
             <ul>
-              <li>080-022-0182</li>
-              <li>주문/결제</li>
-              <li>배송</li>
-              <li>주문배송조회</li>
-              <li>멤버쉽 혜택/서비스</li>
-              <li>공지사항</li>
-              <li>1:1 채팅 문의</li>
-              <li>1:1 이메일 문의</li>
-              <li>이용약관</li>
-              <li>개인정보처리방침</li>
+              {CUSTOMERSERVICE_DATA.map((el, idx) => (
+                <li key={idx}>{el}</li>
+              ))}
             </ul>
           </div>
           <div className="aboutNike">
@@ -87,7 +84,7 @@ class Footer extends Component {
           <div className="insurance">
             <div className="insurranceText">
               <span>
-                안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한{" "}
+                안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한{' '}
                 <br /> KG 이니시스의 구매안전 서비스 (채무지급보증)를 이용하실
                 수 있습니다
               </span>

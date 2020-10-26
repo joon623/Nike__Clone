@@ -1,18 +1,17 @@
 .SortingBoard {
   position: absolute;
-  margin-top: 10px;
-  margin-left: -80px;
-  background-color: #ffffff;
+  margin: 10px 0 0 -80px;
   padding: 0 30px 20px 60px;
+  max-height: 500px;
   text-align: right;
   border-radius: 10%;
-  transition: 0.25s;
-  max-height: 500px;
-  cursor: default;
+  opacity: 1;
+  transition: all 0.3s ease-in;
+  background-color: #ffffff;
 
   &.isActive {
     max-height: 0;
-    display: none;
+    opacity: 0;
     transition: 0.25s;
   }
   p {

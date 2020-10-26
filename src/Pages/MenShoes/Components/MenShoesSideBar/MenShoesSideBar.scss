@@ -1,33 +1,40 @@
-@import "../../../../Styles/common.scss";
+@import '../../../../Styles/common.scss';
 
 .SideBar {
   &.isActive {
     display: none;
   }
+
   .sizingSideBar {
     position: fixed;
     padding: 0px 48px;
     overflow-y: scroll !important;
     width: 303px;
     height: 60vh;
+
     &::-webkit-scrollbar {
       display: none;
     }
+
     &.isActive {
       height: 85vh;
     }
+
     .shoesSize {
       margin-top: 2px;
       padding: 0 0 30px 0;
       border-bottom: 1px solid $borderColor;
+
       &.isActive {
         margin-top: 196px;
       }
+
       .shoesSizeTitle {
         padding: 0 0 22px;
         display: flex;
         justify-content: space-between;
         cursor: pointer;
+
         .title {
           color: #111111;
           font-size: 16px;
@@ -35,13 +42,16 @@
         }
       }
     }
+
     .shoesColor {
       padding-top: 21px;
+
       .shoesColorTitle {
         cursor: pointer;
         padding: 0 0 10px;
         display: flex;
         justify-content: space-between;
+
         .title {
           color: #111111;
           font-size: 16px;

@@ -1,14 +1,11 @@
-import React, { Component } from "react";
-import { withRouter } from "react-router-dom";
-import Nav from "../../Components/Nav/Nav";
-import MenShoesHeader from "./Components/MenShoesHeader/MenShoesHeader";
-import MenShoesSideBar from "./Components/MenShoesSideBar/MenShoesSideBar";
-import MenShoesItems from "./Components/MenShoesItems/MenShoesItems";
-import Footer from "../../Components/Footer/Footer";
-import DisplayWait from "./Components/Modal/DisplayWait";
-import GoToTop from "../../Components/GoToTop/GoToTop";
-import "./Components/MenShoesSideBar/Components/MenShoesSize";
-import "./MenShoes.scss";
+import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
+import MenShoesHeader from './Components/MenShoesHeader/MenShoesHeader';
+import MenShoesSideBar from './Components/MenShoesSideBar/MenShoesSideBar';
+import MenShoesItems from './Components/MenShoesItems/MenShoesItems';
+import DisplayWait from './Components/Modal/DisplayWait';
+import './Components/MenShoesSideBar/Components/MenShoesSize';
+import './MenShoes.scss';
 
 class MenShoes extends Component {
   constructor() {
@@ -22,17 +19,10 @@ class MenShoes extends Component {
     };
   }
 
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
-  }
-
   handleScroll = () => {
-    const isTop = window.scrollY < 50;
-    if (isTop !== true) {
-      this.setState({ scrolled: true });
-    } else {
-      this.setState({ scrolled: false });
-    }
+    window.scrollY > 50
+      ? this.setState({ scrolled: true })
+      : this.setState({ scrolled: false });
   };
 
   toggleSideBar = () => {
@@ -62,13 +52,17 @@ class MenShoes extends Component {
       });
     }, 800);
   };
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
   render() {
     const { showSideBar, scrolled, filteredColor, modal } = this.state;
     const { toggleSideBar, targetValue, displayModal } = this;
     return (
       <>
         <div className="MenShoes">
-          <Nav colorReset={filteredColor} />
           <MenShoesHeader
             toggleSideBar={toggleSideBar}
             showSideBar={showSideBar}
@@ -89,9 +83,7 @@ class MenShoes extends Component {
               targetValue={targetValue}
             />
           </main>
-          <Footer />
         </div>
-        <GoToTop />
       </>
     );
   }
