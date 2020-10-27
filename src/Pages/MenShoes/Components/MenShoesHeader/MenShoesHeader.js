@@ -32,7 +32,7 @@ class MenShoesHeader extends Component {
           <div className={scrolled ? 'titleMain scrolledTitle' : 'titleMain'}>
             Men's 신발
           </div>
-          <div className="titleSpace"></div>
+          <div className="titleSpace" />
         </div>
         <div
           className={

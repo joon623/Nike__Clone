@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import { withRouter } from "react-router-dom";
-import "./MenShoesShoes.scss";
+import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
+import './MenShoesShoes.scss';
 
 class MenShoesShoes extends Component {
   render() {
     const { scrolled, colorFilter } = this.props;
     return (
-      <div className={scrolled ? "MenShoesShoes isActive" : "MenShoesShoes"}>
+      <div className={scrolled ? 'MenShoesShoes isActive' : 'MenShoesShoes'}>
         <ul className="shoesListBoard">
           {colorFilter?.map(({ id, img, title, price }) => {
             return (

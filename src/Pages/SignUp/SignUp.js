@@ -1,20 +1,18 @@
-import React, { Component } from "react";
-import { withRouter } from "react-router-dom";
-import Nav from "../../Components/Nav/Nav";
-import PersonalInfo from "./Components/PersonalInfo";
-import TermsInfo from "./Components/TermsInfo";
-import SelectInfo from "./Components/SelectInfo";
-import { signUpAPI } from "../../config";
-import "./SignUp.scss";
-import GoToTop from "../../Components/GoToTop/GoToTop";
+import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
+import PersonalInfo from './Components/PersonalInfo';
+import TermsInfo from './Components/TermsInfo';
+import SelectInfo from './Components/SelectInfo';
+import { signUpAPI } from '../../config';
+import './SignUp.scss';
 
 class SignUp extends Component {
   state = {
-    userEmail: "",
-    userPassword: "",
-    userRePassword: "",
-    userName: "",
-    userPhone: "",
+    userEmail: '',
+    userPassword: '',
+    userRePassword: '',
+    userName: '',
+    userPhone: '',
     userEmailErrorStatus: false,
     userPasswordErrorStatus: false,
     userRePasswordErrorStatus: false,
@@ -30,7 +28,7 @@ class SignUp extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
 
-    if (localStorage.getItem("token")) {
+    if (localStorage.getItem('token')) {
       this.setState({
         loginStatus: true,
       });
@@ -93,9 +91,9 @@ class SignUp extends Component {
 
   emailCheck = (inputError, inputValue) => {
     const emailError =
-      inputValue.includes("@") &&
-      inputValue.includes(".") &&
-      inputValue.includes("com");
+      inputValue.includes('@') &&
+      inputValue.includes('.') &&
+      inputValue.includes('com');
     const checkKor = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣()]/;
 
     if (emailError && !inputValue.match(checkKor)) {
@@ -183,23 +181,23 @@ class SignUp extends Component {
         [`${inputError}ErrorMsg`]: false,
       });
     } else if (basicError) {
-      if (inputError === "userEmail") {
+      if (inputError === 'userEmail') {
         return this.emailCheck(inputError, inputValue);
       }
 
-      if (inputError === "userPassword") {
+      if (inputError === 'userPassword') {
         return this.pwCheck(inputError, inputValue);
       }
 
-      if (inputError === "userRePassword") {
+      if (inputError === 'userRePassword') {
         return this.repwCheck(inputError, inputValue);
       }
 
-      if (inputError === "userName") {
+      if (inputError === 'userName') {
         return this.nameCheck(inputError, inputValue);
       }
 
-      if (inputError === "userPhone") {
+      if (inputError === 'userPhone') {
         return this.phoneCheck(inputError, inputValue);
       }
     }
@@ -235,11 +233,11 @@ class SignUp extends Component {
       userPhone,
     } = this.state;
 
-    this.errMsgStatus("userEmail", userEmail);
-    this.errMsgStatus("userPassword", userPassword);
-    this.errMsgStatus("userRePassword", userRePassword);
-    this.errMsgStatus("userName", userName);
-    this.errMsgStatus("userPhone", userPhone);
+    this.errMsgStatus('userEmail', userEmail);
+    this.errMsgStatus('userPassword', userPassword);
+    this.errMsgStatus('userRePassword', userRePassword);
+    this.errMsgStatus('userName', userName);
+    this.errMsgStatus('userPhone', userPhone);
   };
 
   signUpClick = () => {
@@ -267,14 +265,14 @@ class SignUp extends Component {
         !userRePasswordErrorStatus &&
         !userNameErrorStatus &&
         !userPhoneErrorStatus &&
-        userEmail !== "" &&
-        userPassword !== "" &&
-        userRePassword !== "" &&
-        userName !== "" &&
-        userPhone !== ""
+        userEmail !== '' &&
+        userPassword !== '' &&
+        userRePassword !== '' &&
+        userName !== '' &&
+        userPhone !== ''
       ) {
         fetch(signUpAPI, {
-          method: "POST",
+          method: 'POST',
           body: JSON.stringify({
             email: userEmail,
             password: userPassword,
@@ -284,21 +282,21 @@ class SignUp extends Component {
         })
           .then((response) => response.json())
           .then((response) => {
-            if (response.message === "SIGN_UP SUCCESS") {
-              alert("회원가입 성공");
-              this.props.history.push("/");
-            } else if (response.message === "EXISTS_EMAIL") {
-              alert("중복된 이메일이 있습니다.");
+            if (response.message === 'SIGN_UP SUCCESS') {
+              alert('회원가입 성공');
+              this.props.history.push('/');
+            } else if (response.message === 'EXISTS_EMAIL') {
+              alert('중복된 이메일이 있습니다.');
             }
           });
       } else {
         this.signUpFocus();
-        alert("입력 사항을 입력해주세요.");
+        alert('입력 사항을 입력해주세요.');
       }
     } else {
       this.allValidCheck();
       this.signUpFocus();
-      alert("필수 체크란을 확인하세요.");
+      alert('필수 체크란을 확인하세요.');
     }
   };
 
@@ -318,8 +316,6 @@ class SignUp extends Component {
 
     return (
       <div className="SignUp">
-        <Nav />
-        <GoToTop />
         <section className="section">
           <div>
             <div className="signUpText">
@@ -357,7 +353,7 @@ class SignUp extends Component {
                 <div className="inputCenter">
                   <input
                     className={
-                      userEmailErrorStatus ? "inputBox error" : "inputBox"
+                      userEmailErrorStatus ? 'inputBox error' : 'inputBox'
                     }
                     placeholder="사용하실 ID를 입력해주세요. (수신 가능 E-mail)"
                     name="userEmail"
@@ -368,18 +364,18 @@ class SignUp extends Component {
                   ></input>
                   <span
                     className={
-                      userEmailErrorStatus ? "errorMsg" : "errorMsg hide"
+                      userEmailErrorStatus ? 'errorMsg' : 'errorMsg hide'
                     }
                   >
                     {userEmailErrorMsg
-                      ? "이메일 형태로 입력해주세요. 해당 계정으로 주문 내역이 발송됩니다."
-                      : "필수 입력 항목입니다."}
+                      ? '이메일 형태로 입력해주세요. 해당 계정으로 주문 내역이 발송됩니다.'
+                      : '필수 입력 항목입니다.'}
                   </span>
                 </div>
                 <div className="inputCenter">
                   <input
                     className={
-                      userPasswordErrorStatus ? "inputBox error" : "inputBox"
+                      userPasswordErrorStatus ? 'inputBox error' : 'inputBox'
                     }
                     placeholder="영문+숫자+특수문자 8~16자리(특수문자 괄호()는 사용 불가)"
                     name="userPassword"
@@ -391,18 +387,18 @@ class SignUp extends Component {
                   ></input>
                   <span
                     className={
-                      userPasswordErrorStatus ? "errorMsg" : "errorMsg hide"
+                      userPasswordErrorStatus ? 'errorMsg' : 'errorMsg hide'
                     }
                   >
                     {userPasswordErrorMsg
-                      ? "영문/숫자/특수문자 조합 8~16자 조합으로 입력해주세요."
-                      : "필수 입력 항목입니다."}
+                      ? '영문/숫자/특수문자 조합 8~16자 조합으로 입력해주세요.'
+                      : '필수 입력 항목입니다.'}
                   </span>
                 </div>
                 <div className="inputCenter">
                   <input
                     className={
-                      userRePasswordErrorStatus ? "inputBox error" : "inputBox"
+                      userRePasswordErrorStatus ? 'inputBox error' : 'inputBox'
                     }
                     placeholder="패스워드를 다시 입력해주세요."
                     name="userRePassword"
@@ -414,18 +410,18 @@ class SignUp extends Component {
                   ></input>
                   <span
                     className={
-                      userRePasswordErrorStatus ? "errorMsg" : "errorMsg hide"
+                      userRePasswordErrorStatus ? 'errorMsg' : 'errorMsg hide'
                     }
                   >
                     {userRePasswordErrorMsg
-                      ? "입력값이 일차하지 않습니다."
-                      : "필수 입력 항목입니다."}
+                      ? '입력값이 일차하지 않습니다.'
+                      : '필수 입력 항목입니다.'}
                   </span>
                 </div>
                 <div className="inputCenter">
                   <input
                     className={
-                      userNameErrorStatus ? "inputBox error" : "inputBox"
+                      userNameErrorStatus ? 'inputBox error' : 'inputBox'
                     }
                     placeholder="이름을 입력해 주세요."
                     name="userName"
@@ -436,18 +432,18 @@ class SignUp extends Component {
                   ></input>
                   <span
                     className={
-                      userNameErrorStatus ? "errorMsg" : "errorMsg hide"
+                      userNameErrorStatus ? 'errorMsg' : 'errorMsg hide'
                     }
                   >
                     {userNameErrorMsg
-                      ? "한글만 입력 가능합니다."
-                      : "필수 입력 항목입니다."}
+                      ? '한글만 입력 가능합니다.'
+                      : '필수 입력 항목입니다.'}
                   </span>
                 </div>
                 <div className="inputCenter">
                   <input
                     className={
-                      userPhoneErrorStatus ? "inputBox error" : "inputBox"
+                      userPhoneErrorStatus ? 'inputBox error' : 'inputBox'
                     }
                     placeholder="휴대폰 번호 '-'표 없이 입력해 주세요."
                     name="userPhone"
@@ -458,12 +454,12 @@ class SignUp extends Component {
                   ></input>
                   <span
                     className={
-                      userPhoneErrorStatus ? "errorMsg" : "errorMsg hide"
+                      userPhoneErrorStatus ? 'errorMsg' : 'errorMsg hide'
                     }
                   >
                     {userPhoneErrorMsg
-                      ? "숫자만 입력 가능합니다."
-                      : "필수 입력 항목입니다."}
+                      ? '숫자만 입력 가능합니다.'
+                      : '필수 입력 항목입니다.'}
                   </span>
                 </div>
                 <TermsInfo clickE={this.termsCheck} />

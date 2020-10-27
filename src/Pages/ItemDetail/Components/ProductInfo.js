@@ -1,19 +1,20 @@
-import React, { Component } from "react";
-import DetailCategoryNprice from "./ProductInfo/DetailCategoryNprice";
-import SelectSize from "./ProductInfo/SelectSize";
-import SizeBox from "./ProductInfo/SizeBox";
-import Quantity from "./ProductInfo/Quantity";
-import Purchase from "./ProductInfo/Purchase";
-import DeliveryService from "./ProductInfo/DeliveryService";
-import ItemInfo from "./ProductInfo/ItemInfo";
-import Review from "./ProductInfo/Review";
-import Delivery from "./ProductInfo/Delivery";
-import Refund from "./ProductInfo/Refund";
-import "./ProductInfo.scss";
+import React, { Component } from 'react';
+import DetailCategoryNprice from './ProductInfo/DetailCategoryNprice';
+import SelectSize from './ProductInfo/SelectSize';
+import SizeBox from './ProductInfo/SizeBox';
+import Quantity from './ProductInfo/Quantity';
+import Purchase from './ProductInfo/Purchase';
+import DeliveryService from './ProductInfo/DeliveryService';
+import ItemInfo from './ProductInfo/ItemInfo';
+import Review from './ProductInfo/Review';
+import Delivery from './ProductInfo/Delivery';
+import Refund from './ProductInfo/Refund';
+import './ProductInfo.scss';
 
 class ProductInfo extends Component {
   constructor() {
     super();
+
     this.state = {
       current: -1,
       isActive: false,
@@ -28,14 +29,14 @@ class ProductInfo extends Component {
   }
 
   componentDidMount() {
-    if (localStorage.getItem("basketData") === null) {
+    if (localStorage.getItem('basketData') === null) {
       localStorage.setItem(
         `basketData`,
         JSON.stringify(this.state.basketItems)
       );
       return;
     } else {
-      let localBasketData = JSON.parse(localStorage.getItem("basketData"));
+      let localBasketData = JSON.parse(localStorage.getItem('basketData'));
       this.setState({
         basketItems: localBasketData,
       });
@@ -107,11 +108,11 @@ class ProductInfo extends Component {
       },
       () => {
         localStorage.setItem(
-          "basketData",
+          'basketData',
           JSON.stringify(this.state.basketItems)
         );
         let allNum = 0;
-        JSON.parse(localStorage.getItem("basketData")).forEach((el) => {
+        JSON.parse(localStorage.getItem('basketData')).forEach((el) => {
           allNum = allNum + el.price * el.quantity;
         });
         this.setState({
@@ -129,11 +130,11 @@ class ProductInfo extends Component {
       },
       () => {
         localStorage.setItem(
-          "basketData",
+          'basketData',
           JSON.stringify(this.state.filteredItems)
         );
         let allNum = 0;
-        JSON.parse(localStorage.getItem("basketData")).forEach((el) => {
+        JSON.parse(localStorage.getItem('basketData')).forEach((el) => {
           allNum = allNum + el.price * el.quantity;
         });
         this.setState({

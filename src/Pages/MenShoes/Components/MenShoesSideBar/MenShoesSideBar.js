@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import MenShoesSize from "./Components/MenShoesSize";
-import MenShoesColor from "./Components/MenShoesColor";
-import { listMockData } from "../../../../config";
-import "../MenShoesSideBar/MenShoesSideBar.scss";
+import React, { Component } from 'react';
+import MenShoesSize from './Components/MenShoesSize';
+import MenShoesColor from './Components/MenShoesColor';
+import { listMockData } from '../../../../config';
+import '../MenShoesSideBar/MenShoesSideBar.scss';
 
 class MenShoesSideBar extends Component {
   constructor() {
@@ -38,11 +38,14 @@ class MenShoesSideBar extends Component {
     const { sizeExpanded, colorExpanded, sizeList, colorList } = this.state;
     const { showSideBar, scrolled, targetValue, displayModal } = this.props;
     const { handleToggle } = this;
-
+    console.log(window.scrollY > 7856);
     return (
-      <div className={showSideBar ? "SideBar" : "SideBar isActive"}>
-        <div className={scrolled ? "sizingSideBar isActive" : "sizingSideBar"}>
-          <div className={scrolled ? "shoesSize isActive" : "shoesSize"}>
+      <div className={showSideBar ? 'SideBar' : 'SideBar isActive'}>
+        <div
+          className={scrolled ? 'sizingSideBar isActive' : 'sizingSideBar'}
+          style={{ zIndex: window.scrollY > 7856 ? -1 : '' }}
+        >
+          <div className={scrolled ? 'shoesSize isActive' : 'shoesSize'}>
             <div
               className="shoesSizeTitle"
               data-toggle="sizeExpanded"
@@ -52,7 +55,7 @@ class MenShoesSideBar extends Component {
               <div className="icon">
                 <i
                   className={
-                    sizeExpanded ? "fas fa-angle-up" : "fas fa-angle-down"
+                    sizeExpanded ? 'fas fa-angle-up' : 'fas fa-angle-down'
                   }
                 ></i>
               </div>
@@ -69,7 +72,7 @@ class MenShoesSideBar extends Component {
               <div className="icon">
                 <i
                   className={
-                    colorExpanded ? "fas fa-angle-up" : "fas fa-angle-down"
+                    colorExpanded ? 'fas fa-angle-up' : 'fas fa-angle-down'
                   }
                 ></i>
               </div>
