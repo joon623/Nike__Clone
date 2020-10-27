@@ -1,9 +1,11 @@
-@import "../../../../Styles/common.scss";
+@import '../../../../Styles/common.scss';
 
 .MenShoesHeader {
-  padding: 20px 20px 20px;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  top: 0;
+  padding: 20px 20px 20px;
   z-index: 3;
   background-color: $backgroundColor;
   transition: 0.05s linear;
@@ -11,6 +13,7 @@
 
   &.scrolled {
     position: fixed;
+    top: 0;
     margin-top: 92px;
   }
   .titleSection {

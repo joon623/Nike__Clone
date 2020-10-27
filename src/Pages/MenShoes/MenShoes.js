@@ -60,6 +60,7 @@ class MenShoes extends Component {
   render() {
     const { showSideBar, scrolled, filteredColor, modal } = this.state;
     const { toggleSideBar, targetValue, displayModal } = this;
+
     return (
       <>
         <div className="MenShoes">
